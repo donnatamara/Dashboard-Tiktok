@@ -1,0 +1,37 @@
+export interface Account {
+  username: string;
+  unique_id: string;
+  nickname: string;
+  bio: string;
+  profile_url: string;
+  avatar_url: string;
+  followers: string;
+  following: string;
+  total_likes: string;
+  video_count: string;
+  verified: string;
+  private_account: string;
+  business_account: string;
+  email: string;
+  website: string;
+  instagram: string;
+  youtube: string;
+  linktree: string;
+  whatsapp: string;
+  facebook: string;
+  profile_location: string;
+  location_detected: string;
+  location_source: string;
+  creator_keywords: string;
+  creator_keywords_found: string;
+  business_indicators_found: string;
+  live_detected: string;
+  has_tiktok_shop: string;
+  monetization: string;
+  average_views: string;
+  average_likes: string;
+  average_comments: string;
+  average_shares: string;
+  engagement_rate: string;
+  scraped_at: string;
+}

@@ -2,6 +2,7 @@ import { useState, useMemo } from 'react';
 import type { Account } from '../types';
 import COLORS from '../colors';
 import TikTokIcon from './TikTokIcon';
+import { SearchIcon, CrossIcon, MailIcon, GlobeIcon, InstagramIcon, MessageIcon, FacebookIcon } from './Icons';
 
 interface Props {
   accounts: Account[];
@@ -63,8 +64,8 @@ export default function AccountTable({ accounts }: Props) {
   };
 
   const sortIcon = (key: SortKey) => {
-    if (sortKey !== key) return '';
-    return sortDir === 'desc' ? ' ▼' : ' ▲';
+    if (sortKey !== key) return ' ↕';
+    return sortDir === 'desc' ? ' ↓' : ' ↑';
   };
 
   const resetFilters = () => {
@@ -74,10 +75,14 @@ export default function AccountTable({ accounts }: Props) {
     setPage(0);
   };
 
+  const hasFilters = search || filterLocation || filterMonetized;
+
   return (
     <div>
-      {/* Filters */}
-      <div style={filterBarStyle}>
+      <div className="responsive-filters">
+        <span style={{ display: 'flex', alignItems: 'center' }}>
+          <SearchIcon size={16} color={COLORS.textMuted} />
+        </span>
         <input
           type="text"
           placeholder="Cari username, nickname, bio, lokasi..."
@@ -103,17 +108,20 @@ export default function AccountTable({ accounts }: Props) {
           <option value="tidak">Monetisasi: Tidak</option>
         </select>
         <span style={countStyle}>{filtered.length} akun</span>
-        {(search || filterLocation || filterMonetized) && (
-          <button onClick={resetFilters} style={resetBtnStyle}>Reset</button>
+        {hasFilters && (
+          <button onClick={resetFilters} style={resetBtnStyle}>
+            <span style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
+              <CrossIcon size={12} color={COLORS.orangeDarker} /> Reset
+            </span>
+          </button>
         )}
       </div>
 
-      {/* Table */}
-      <div style={{ overflowX: 'auto' }}>
+      <div className="responsive-table-wrap">
         <table style={tableStyle}>
           <thead>
             <tr>
-              <th style={thStyle}>#</th>
+              <th style={thNumStyle}>#</th>
               <th style={thStyleSortable} onClick={() => toggleSort('username')}>Akun{sortIcon('username')}</th>
               <th style={thStyle}>Lokasi</th>
               <th style={thStyleSortable} onClick={() => toggleSort('followers')}>Followers{sortIcon('followers')}</th>
@@ -129,26 +137,30 @@ export default function AccountTable({ accounts }: Props) {
           </thead>
           <tbody>
             {pageData.map((acc, idx) => (
-              <tr key={acc.username} style={trStyle}>
-                <td style={tdStyle}>{page * perPage + idx + 1}</td>
+                <tr key={acc.username} className="table-row" style={trStyle()}>
+                <td style={tdNumStyle}>{page * perPage + idx + 1}</td>
                 <td style={tdStyle}>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
                     {acc.avatar_url ? (
                       <img
                         src={acc.avatar_url}
                         alt=""
-                        style={{ width: 32, height: 32, borderRadius: '50%', objectFit: 'cover', background: COLORS.border }}
+                        style={{ width: 36, height: 36, borderRadius: '50%', objectFit: 'cover', background: COLORS.borderLight, flexShrink: 0 }}
                         onError={e => { (e.target as HTMLImageElement).src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M72.8 19.2c-3.5-4.1-5.6-9.3-5.8-14.8h-3.2l-.1.1V43c0 6.6-5.4 12-12 12s-12-5.4-12-12 5.4-12 12-12c1.2 0 2.3.2 3.4.5v-3.3c-1.1-.2-2.3-.3-3.4-.3-8.6 0-15.5 6.9-15.5 15.5s6.9 15.5 15.5 15.5c7.7 0 14.1-5.6 15.3-12.9l.2-38.2c.1 0 .1 0 .2.1 2.3.6 4.5 1.6 6.4 3.1 0 0 0 0 .1.1 2.3 1.7 4.3 3.9 5.7 6.5h.1z' fill='%23EBB773' fill-rule='evenodd'/%3E%3C/svg%3E"; }}
                       />
                     ) : (
-                      <TikTokIcon size={32} color="#EBB773" />
+                      <div style={{ width: 36, height: 36, borderRadius: '50%', background: COLORS.orangeLight, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                        <TikTokIcon size={20} color={COLORS.orangeDark} />
+                      </div>
                     )}
                     <div>
                       <a href={acc.profile_url} target="_blank" rel="noopener noreferrer" style={linkStyle}>
                         @{acc.username}
                       </a>
                       {acc.verified === '1' && <span style={verifiedBadge}>✓</span>}
-                      <div style={{ fontSize: 11, color: COLORS.textSecondary }}>{acc.nickname}</div>
+                      <div style={{ fontSize: 11, color: COLORS.textMuted, marginTop: 1, maxWidth: 180, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                        {acc.nickname || '—'}
+                      </div>
                     </div>
                   </div>
                 </td>
@@ -156,10 +168,10 @@ export default function AccountTable({ accounts }: Props) {
                   {acc.location_detected ? (
                     <span style={locBadgeStyle}>{acc.location_detected}</span>
                   ) : (
-                    <span style={{ color: COLORS.textSecondary, fontSize: 11 }}>—</span>
+                    <span style={{ color: COLORS.textMuted, fontSize: 11 }}>—</span>
                   )}
                   {acc.location_source && (
-                    <div style={{ fontSize: 10, color: COLORS.textSecondary, marginTop: 2 }}>({acc.location_source})</div>
+                    <div style={{ fontSize: 10, color: COLORS.textMuted, marginTop: 2 }}>{acc.location_source}</div>
                   )}
                 </td>
                 <td style={{ ...tdStyle, fontWeight: 600 } as React.CSSProperties}>{fmt(acc.followers)}</td>
@@ -168,42 +180,59 @@ export default function AccountTable({ accounts }: Props) {
                 <td style={tdStyle}>{fmt(acc.average_views)}</td>
                 <td style={tdStyle}>
                   {acc.engagement_rate ? (
-                    <span style={{ color: COLORS.orangeDark, fontWeight: 600 }}>{parseFloat(acc.engagement_rate).toFixed(2)}%</span>
+                    <span style={{ color: COLORS.orangeDarker, fontWeight: 700, fontSize: 13 }}>
+                      {parseFloat(acc.engagement_rate).toFixed(2)}%
+                    </span>
                   ) : (
-                    <span style={{ color: COLORS.textSecondary, fontSize: 11 }}>—</span>
+                    <span style={{ color: COLORS.textMuted, fontSize: 11 }}>—</span>
                   )}
                 </td>
                 <td style={{ ...tdStyle, textAlign: 'center' } as React.CSSProperties}>
-                  {acc.has_tiktok_shop === '1' ? badge('Ya', COLORS.green) : badge('Tidak', COLORS.textSecondary)}
+                  {acc.has_tiktok_shop === '1' ? badge('Ya', '#059669', '#ECFDF5') : badge('Tidak', '#6b6b6b', 'rgba(107,107,107,0.063)')}
                 </td>
                 <td style={{ ...tdStyle, textAlign: 'center' } as React.CSSProperties}>
-                  {acc.monetization === '1' ? badge('Ya', COLORS.green) : badge('Tidak', COLORS.textSecondary)}
+                  {acc.monetization === '1' ? badge('Ya', '#059669', '#ECFDF5') : badge('Tidak', '#6b6b6b', 'rgba(107,107,107,0.063)')}
                 </td>
                 <td style={{ ...tdStyle, textAlign: 'center' } as React.CSSProperties}>
-                  {acc.business_account === '1' ? badge('Ya', '#2196F3') : badge('Tidak', COLORS.textSecondary)}
+                  {acc.business_account === '1' ? badge('Ya', '#2563EB', '#EFF6FF') : badge('Tidak', '#6b6b6b', 'rgba(107,107,107,0.063)')}
                 </td>
                 <td style={tdStyle}>
-                  <div style={{ fontSize: 11, lineHeight: 1.6 }}>
-                    {acc.email && <div>📧 {acc.email}</div>}
-                    {acc.website && <div>🌐 <a href={acc.website} target="_blank" style={{ color: COLORS.orangeDark }}>web</a></div>}
-                    {acc.instagram && <div>📸 @{acc.instagram}</div>}
-                    {acc.whatsapp && <div>💬 {acc.whatsapp}</div>}
-                    {!acc.email && !acc.website && !acc.instagram && !acc.whatsapp && (
-                      <span style={{ color: COLORS.textSecondary }}>—</span>
+                  <div style={{ fontSize: 11, lineHeight: 1.8, display: 'flex', flexDirection: 'column', gap: 2 }}>
+                    {acc.email && <ContactChip icon={MailIcon} text={acc.email} />}
+                    {acc.website && <ContactChip icon={GlobeIcon} text={<a href={acc.website} target="_blank" style={{ color: COLORS.orangeDark, fontWeight: 600 }}>Website</a>} />}
+                    {acc.instagram && <ContactChip icon={InstagramIcon} text={`@${acc.instagram}`} />}
+                    {acc.whatsapp && <ContactChip icon={MessageIcon} text={acc.whatsapp} />}
+                    {acc.facebook && <ContactChip icon={FacebookIcon} text={acc.facebook} />}
+                    {!acc.email && !acc.website && !acc.instagram && !acc.whatsapp && !acc.facebook && (
+                      <span style={{ color: COLORS.textMuted }}>—</span>
                     )}
                   </div>
                 </td>
               </tr>
             ))}
+            {pageData.length === 0 && (
+              <tr>
+                <td colSpan={12} style={{ textAlign: 'center', padding: 40, color: COLORS.textMuted }}>
+                  <div style={{ marginBottom: 8, opacity: 0.5 }}><SearchIcon size={32} color={COLORS.textMuted} /></div>
+                  <div style={{ fontWeight: 600, marginBottom: 4 }}>Tidak ada akun ditemukan</div>
+                  <div style={{ fontSize: 12 }}>Coba ubah filter atau kata kunci pencarian</div>
+                </td>
+              </tr>
+            )}
           </tbody>
         </table>
       </div>
 
-      {/* Pagination */}
       {totalPages > 1 && (
-        <div style={paginationStyle}>
-          <button disabled={page === 0} onClick={() => setPage(p => p - 1)} style={pageBtnStyle}>« Prev</button>
-          {Array.from({ length: totalPages }, (_, i) => (
+        <div className="responsive-pagination">
+          <button
+            disabled={page === 0}
+            onClick={() => setPage(p => p - 1)}
+            style={pageBtnStyle}
+          >
+            ‹ Prev
+          </button>
+          {Array.from({ length: Math.min(totalPages, 15) }, (_, i) => (
             <button
               key={i}
               onClick={() => setPage(i)}
@@ -212,10 +241,31 @@ export default function AccountTable({ accounts }: Props) {
               {i + 1}
             </button>
           ))}
-          <button disabled={page >= totalPages - 1} onClick={() => setPage(p => p + 1)} style={pageBtnStyle}>Next »</button>
+          {totalPages > 15 && <span style={{ color: COLORS.textMuted, fontSize: 12 }}>...</span>}
+          <button
+            disabled={page >= totalPages - 1}
+            onClick={() => setPage(p => p + 1)}
+            style={pageBtnStyle}
+          >
+            Next ›
+          </button>
+          <span style={{ fontSize: 11, color: COLORS.textMuted, marginLeft: 8 }}>
+            Halaman {page + 1} dari {totalPages}
+          </span>
         </div>
       )}
     </div>
+  );
+}
+
+function ContactChip({ icon: Icon, text }: { icon: React.ComponentType<{size: number; color: string}>; text: string | React.ReactNode }) {
+  return (
+    <span style={{ display: 'inline-flex', alignItems: 'center', gap: 4, fontSize: 11 }}>
+      <Icon size={12} color={COLORS.textMuted} />
+      {typeof text === 'string' ? (
+        <span style={{ color: COLORS.textSecondary, maxWidth: 100, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap', display: 'inline-block' }}>{text}</span>
+      ) : text}
+    </span>
   );
 }
 
@@ -226,64 +276,64 @@ function fmt(val: string): string {
   return n.toString();
 }
 
-function badge(text: string, color: string) {
+function badge(text: string, color: string, bg: string) {
   return (
     <span style={{
       fontSize: 11,
       fontWeight: 600,
       color,
-      border: `1px solid ${color}40`,
-      borderRadius: 4,
-      padding: '2px 6px',
-      background: `${color}10`,
+      background: bg,
+      borderRadius: 6,
+      padding: '3px 8px',
+      display: 'inline-block',
+      lineHeight: 1.3,
     }}>
       {text}
     </span>
   );
 }
 
-const filterBarStyle: React.CSSProperties = {
-  display: 'flex',
-  gap: 10,
-  alignItems: 'center',
-  flexWrap: 'wrap',
-  marginBottom: 16,
-};
-
 const searchInputStyle: React.CSSProperties = {
-  flex: '1 1 200px',
+  flex: '1 1 220px',
   padding: '8px 12px',
-  border: `1px solid ${COLORS.border}`,
+  border: '1px solid #E5E0D6',
   borderRadius: 8,
   fontSize: 13,
   outline: 'none',
-  background: COLORS.white,
+  background: '#fff',
+  color: '#2d2d2d',
 };
 
 const selectStyle: React.CSSProperties = {
   padding: '8px 12px',
-  border: `1px solid ${COLORS.border}`,
+  border: '1px solid #E5E0D6',
   borderRadius: 8,
   fontSize: 13,
-  background: COLORS.white,
+  background: '#fff',
   outline: 'none',
+  color: '#2d2d2d',
+  cursor: 'pointer',
+  minWidth: 140,
 };
 
 const countStyle: React.CSSProperties = {
   fontSize: 12,
-  color: COLORS.textSecondary,
+  color: COLORS.textMuted,
+  fontWeight: 500,
   marginLeft: 'auto',
+  whiteSpace: 'nowrap',
 };
 
 const resetBtnStyle: React.CSSProperties = {
-  padding: '6px 14px',
-  border: 'none',
-  borderRadius: 6,
-  background: COLORS.orange,
-  color: COLORS.white,
+  padding: '6px 12px',
+  border: '1px solid #d49545',
+  borderRadius: 8,
+  background: '#fff3e0',
+  color: '#d49545',
   fontSize: 12,
   fontWeight: 600,
   cursor: 'pointer',
+  whiteSpace: 'nowrap',
 };
 
 const tableStyle: React.CSSProperties = {
@@ -295,75 +345,88 @@ const tableStyle: React.CSSProperties = {
 const thStyle: React.CSSProperties = {
   textAlign: 'left',
   padding: '10px 12px',
-  borderBottom: `2px solid ${COLORS.orange}`,
-  color: COLORS.textSecondary,
+  borderBottom: '1px solid #E5E0D6',
+  color: '#6b6b6b',
   fontSize: 11,
-  fontWeight: 600,
+  fontWeight: 700,
   textTransform: 'uppercase',
   whiteSpace: 'nowrap',
-  letterSpacing: '0.3px',
-  background: COLORS.white,
+  letterSpacing: '0.4px',
+  background: '#fff',
   position: 'sticky',
   top: 0,
+  userSelect: 'none',
+};
+
+const thNumStyle: React.CSSProperties = {
+  ...thStyle,
+  width: 36,
+  textAlign: 'center',
 };
 
 const thStyleSortable: React.CSSProperties = {
   ...thStyle,
   cursor: 'pointer',
-  userSelect: 'none',
 };
 
-const trStyle: React.CSSProperties = {
-  borderBottom: `1px solid ${COLORS.border}`,
-};
+const trStyle = (): React.CSSProperties => ({
+  borderBottom: '1px solid #F0EDE8',
+  background: '#fff',
+});
 
 const tdStyle: React.CSSProperties = {
   padding: '10px 12px',
-  verticalAlign: 'top',
+  verticalAlign: 'middle',
+};
+
+const tdNumStyle: React.CSSProperties = {
+  ...tdStyle,
+  textAlign: 'center',
+  color: COLORS.textMuted,
+  fontSize: 11,
+  fontWeight: 500,
 };
 
 const linkStyle: React.CSSProperties = {
-  color: COLORS.orangeDark,
+  color: COLORS.orangeDarker,
   fontWeight: 600,
   textDecoration: 'none',
+  fontSize: 13,
 };
 
 const verifiedBadge: React.CSSProperties = {
   color: '#1DA1F2',
-  fontSize: 14,
-  marginLeft: 4,
+  fontSize: 13,
+  marginLeft: 3,
 };
 
 const locBadgeStyle: React.CSSProperties = {
   background: COLORS.orangeLight,
-  color: COLORS.orangeDark,
+  color: COLORS.orangeDarker,
   fontSize: 12,
   fontWeight: 600,
   padding: '2px 8px',
-  borderRadius: 4,
-};
-
-const paginationStyle: React.CSSProperties = {
-  display: 'flex',
-  justifyContent: 'center',
-  alignItems: 'center',
-  gap: 6,
-  marginTop: 20,
+  borderRadius: 6,
+  display: 'inline-block',
 };
 
 const pageBtnStyle: React.CSSProperties = {
-  padding: '6px 12px',
-  border: `1px solid ${COLORS.border}`,
+  padding: '6px 10px',
+  border: '1px solid #E5E0D6',
   borderRadius: 6,
-  background: COLORS.white,
-  color: COLORS.textSecondary,
+  background: '#fff',
+  color: '#6b6b6b',
   fontSize: 12,
+  fontWeight: 500,
   cursor: 'pointer',
+  minWidth: 32,
+  textAlign: 'center',
 };
 
 const pageBtnActiveStyle: React.CSSProperties = {
   ...pageBtnStyle,
-  background: COLORS.orange,
-  color: COLORS.white,
-  borderColor: COLORS.orange,
+  background: '#d49545',
+  color: '#fff',
+  borderColor: '#d49545',
+  fontWeight: 600,
 };

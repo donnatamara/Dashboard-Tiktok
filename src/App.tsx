@@ -1,166 +1,101 @@
 import { useMemo } from 'react';
 import data from './data.json';
 import type { Account } from './types';
-import COLORS from './colors';
-import SummaryCards from './components/SummaryCards';
 import AccountTable from './components/AccountTable';
-import TikTokIcon from './components/TikTokIcon';
 import './App.css';
+import './responsive.css';
 
 export default function App() {
   const accounts = useMemo(() => data as Account[], []);
-  const totalScraped = 307;
-
+  const totalScraped = accounts.length;
   const totalFollowers = accounts.reduce((s, a) => s + (parseInt(a.followers) || 0), 0);
   const withLocation = accounts.filter(a => a.location_detected).length;
   const monetized = accounts.filter(a => a.monetization === '1').length;
   const withShop = accounts.filter(a => a.has_tiktok_shop === '1').length;
+  const totalLikes = accounts.reduce((s, a) => s + (parseInt(a.total_likes) || 0), 0);
+  const totalVideos = accounts.reduce((s, a) => s + (parseInt(a.video_count) || 0), 0);
+  const avgViews = Math.round(accounts.reduce((s, a) => s + (parseInt(a.average_views) || 0), 0) / Math.max(1, accounts.filter(a => parseInt(a.average_views) > 0).length));
+  const avgER = accounts.reduce((s, a) => s + (parseFloat(a.engagement_rate) || 0), 0) / Math.max(1, accounts.filter(a => parseFloat(a.engagement_rate) > 0).length);
+  const business = accounts.filter(a => a.business_account === '1').length;
+  const verified = accounts.filter(a => a.verified === '1').length;
+  const withEmail = accounts.filter(a => a.email).length;
+  const withInstagram = accounts.filter(a => a.instagram).length;
+  const withWhatsapp = accounts.filter(a => a.whatsapp).length;
 
   return (
-    <div style={appStyle}>
-      {/* Header */}
-      <header style={headerStyle}>
-        <div style={headerInnerStyle}>
+    <div style={{ minHeight: '100vh', background: '#fffdf7', color: '#2d2d2d', fontFamily: 'Inter, Segoe UI, system-ui, sans-serif' }}>
+      <header style={{ background: 'linear-gradient(135deg, #d49545 0%, #ebb773 100%)', padding: '32px 24px', color: '#fff', boxShadow: 'rgba(235,183,115,0.3) 0px 4px 20px' }}>
+        <div style={{ maxWidth: 1400, margin: '0 auto', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
-            <TikTokIcon size={36} />
+            <svg viewBox="0 0 100 100" width="36" height="36" xmlns="http://www.w3.org/2000/svg"><path d="M72.8 19.2c-3.5-4.1-5.6-9.3-5.8-14.8h-3.2l-.1.1V43c0 6.6-5.4 12-12 12s-12-5.4-12-12 5.4-12 12-12c1.2 0 2.3.2 3.4.5v-3.3c-1.1-.2-2.3-.3-3.4-.3-8.6 0-15.5 6.9-15.5 15.5s6.9 15.5 15.5 15.5c7.7 0 14.1-5.6 15.3-12.9l.2-38.2c.1 0 .1 0 .2.1 2.3.6 4.5 1.6 6.4 3.1 0 0 0 0 .1.1 2.3 1.7 4.3 3.9 5.7 6.5h.1z" fill="white" fill-rule="evenodd"></path></svg>
             <div>
-              <h1 style={h1Style}>Sensus Ekonomi Digital</h1>
-              <p style={subtitleStyle}>Direktori Pelaku Ekonomi Digital — Kabupaten Banyumas</p>
+              <h1 style={{ fontSize: 28, fontWeight: 800, margin: 0, letterSpacing: '-0.5px' }}>Sensus Ekonomi Digital</h1>
+              <p style={{ fontSize: 14, margin: '4px 0 0', opacity: 0.85 }}>Direktori Pelaku Ekonomi Digital — Kabupaten Banyumas</p>
             </div>
           </div>
           <div style={{ textAlign: 'right' }}>
-            <div style={{ fontSize: 12, color: COLORS.textSecondary }}>Data TikTok · {new Date().toLocaleDateString('id-ID')}</div>
+            <div style={{ fontSize: 12, color: '#6b6b6b' }}>Data TikTok · {new Date().toLocaleDateString('id-ID', { day: 'numeric', month: 'numeric', year: 'numeric' })}</div>
             <div style={{ fontSize: 11, opacity: 0.6, marginTop: 2 }}>{totalScraped} akun terkumpul</div>
           </div>
         </div>
       </header>
 
       <main style={{ maxWidth: 1400, margin: '0 auto', padding: '0 24px' }}>
-        {/* Hero Summary */}
-        <div style={heroStyle}>
-          <div style={heroItemStyle}>
-            <div style={heroValueStyle}>{totalScraped}</div>
-            <div style={heroLabelStyle}>Total Akun</div>
-          </div>
-          <div style={heroDivider} />
-          <div style={heroItemStyle}>
-            <div style={heroValueStyle}>{formatHero(totalFollowers)}</div>
-            <div style={heroLabelStyle}>Total Followers</div>
-          </div>
-          <div style={heroDivider} />
-          <div style={heroItemStyle}>
-            <div style={heroValueStyle}>{withLocation}</div>
-            <div style={heroLabelStyle}>Lokasi Terdeteksi</div>
-          </div>
-          <div style={heroDivider} />
-          <div style={heroItemStyle}>
-            <div style={heroValueStyle}>{monetized}</div>
-            <div style={heroLabelStyle}>Monetisasi</div>
-          </div>
-          <div style={heroDivider} />
-          <div style={heroItemStyle}>
-            <div style={heroValueStyle}>{withShop}</div>
-            <div style={heroLabelStyle}>TikTok Shop</div>
-          </div>
+        {/* Stats row - overlapping the header */}
+        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 0, margin: '-20px auto 28px', background: '#fff', borderRadius: 16, boxShadow: 'rgba(0,0,0,0.06) 0px 4px 24px', padding: '22px 0', maxWidth: 800 }}>
+          <StatItem value={totalScraped} label="Total Akun" />
+          <div style={{ width: 1, height: 40, background: '#F0E6D6' }} />
+          <StatItem value={formatNum(totalFollowers)} label="Total Followers" />
+          <div style={{ width: 1, height: 40, background: '#F0E6D6' }} />
+          <StatItem value={withLocation} label="Lokasi Terdeteksi" />
+          <div style={{ width: 1, height: 40, background: '#F0E6D6' }} />
+          <StatItem value={monetized} label="Monetisasi" />
+          <div style={{ width: 1, height: 40, background: '#F0E6D6' }} />
+          <StatItem value={withShop} label="TikTok Shop" />
         </div>
 
-        {/* Cards */}
-        <SummaryCards accounts={accounts} totalScraped={totalScraped} />
+        {/* Summary cards grid — no overlap with stats row above */}
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(7, 1fr)', gap: 16, marginBottom: 28 }}>
+          <SummaryCard value={formatNum(totalLikes)} label="Total Likes" sub={`${accounts.filter(a => parseInt(a.total_likes) > 0).length} akun dengan like`} />
+          <SummaryCard value={formatNum(totalVideos)} label="Total Video" sub={`${Math.round(totalVideos / Math.max(1, totalScraped))} video/akun`} />
+          <SummaryCard value={formatNum(avgViews)} label="Rata-rata Views" sub="per video" />
+          <SummaryCard value={avgER.toFixed(2) + '%'} label="Rata-rata ER" sub={`${accounts.filter(a => parseFloat(a.engagement_rate) > 0).length} akun terhitung`} />
+          <SummaryCard value={verified} label="Terverifikasi" sub={`${((verified/totalScraped)*100).toFixed(1)}% dari total`} />
+          <SummaryCard value={business} label="Akun Bisnis" sub={`${((business/totalScraped)*100).toFixed(0)}% dari total`} />
+          <SummaryCard value={withEmail} label="Email Publik" sub={`${withInstagram} IG, ${withWhatsapp} WA`} />
+        </div>
 
-        {/* Table */}
         <AccountTable accounts={accounts} />
       </main>
 
-      <footer style={footerStyle}>
-        Sensus Ekonomi 2026 · Data diperbarui {new Date().toLocaleDateString('id-ID')} · <a href="#" style={{ color: COLORS.orangeDark }}>Kembali ke atas</a>
+      <footer style={{ textAlign: 'center', padding: 24, marginTop: 40, fontSize: 12, color: '#6b6b6b' }}>
+        Sensus Ekonomi 2026 · Data diperbarui {new Date().toLocaleDateString('id-ID', { day: 'numeric', month: 'numeric', year: 'numeric' })} · <a href="#root" style={{ color: '#d49545', fontWeight: 600, textDecoration: 'none' }}>Kembali ke atas</a>
       </footer>
     </div>
   );
 }
 
-function formatHero(n: number): string {
+function formatNum(n: number): string {
   if (n >= 1_000_000) return (n / 1_000_000).toFixed(1) + ' jt';
   if (n >= 1_000) return (n / 1_000).toFixed(1) + ' rb';
   return n.toString();
 }
 
-const appStyle: React.CSSProperties = {
-  minHeight: '100vh',
-  background: COLORS.bg,
-  color: COLORS.text,
-};
+function StatItem({ value, label }: { value: string | number; label: string }) {
+  return (
+    <div style={{ flex: 1, textAlign: 'center' }}>
+      <div style={{ fontSize: 32, fontWeight: 700, color: '#d49545' }}>{value}</div>
+      <div style={{ fontSize: 11, color: '#6b6b6b', textTransform: 'uppercase', letterSpacing: '0.5px', marginTop: 4 }}>{label}</div>
+    </div>
+  );
+}
 
-const headerStyle: React.CSSProperties = {
-  background: `linear-gradient(135deg, ${COLORS.orangeDark} 0%, ${COLORS.orange} 100%)`,
-  padding: '32px 24px',
-  color: COLORS.white,
-  boxShadow: '0 4px 20px rgba(235,183,115,0.3)',
-};
-
-const headerInnerStyle: React.CSSProperties = {
-  maxWidth: 1400,
-  margin: '0 auto',
-  display: 'flex',
-  justifyContent: 'space-between',
-  alignItems: 'center',
-};
-
-const h1Style: React.CSSProperties = {
-  fontSize: 28,
-  fontWeight: 800,
-  margin: 0,
-  letterSpacing: '-0.5px',
-};
-
-const subtitleStyle: React.CSSProperties = {
-  fontSize: 14,
-  margin: '4px 0 0 0',
-  opacity: 0.85,
-};
-
-const heroStyle: React.CSSProperties = {
-  display: 'flex',
-  justifyContent: 'center',
-  alignItems: 'center',
-  gap: 0,
-  margin: '-20px auto 28px',
-  background: COLORS.white,
-  borderRadius: 16,
-  boxShadow: '0 4px 24px rgba(0,0,0,0.06)',
-  padding: '22px 0',
-  maxWidth: 800,
-};
-
-const heroItemStyle: React.CSSProperties = {
-  flex: 1,
-  textAlign: 'center',
-};
-
-const heroValueStyle: React.CSSProperties = {
-  fontSize: 32,
-  fontWeight: 700,
-  color: COLORS.orangeDark,
-};
-
-const heroLabelStyle: React.CSSProperties = {
-  fontSize: 11,
-  color: COLORS.textSecondary,
-  textTransform: 'uppercase',
-  letterSpacing: '0.5px',
-  marginTop: 4,
-};
-
-const heroDivider: React.CSSProperties = {
-  width: 1,
-  height: 40,
-  background: COLORS.border,
-};
-
-const footerStyle: React.CSSProperties = {
-  textAlign: 'center',
-  padding: '24px',
-  fontSize: 12,
-  color: COLORS.textSecondary,
-  borderTop: `1px solid ${COLORS.border}`,
-  marginTop: 40,
-};
+function SummaryCard({ value, label, sub }: { value: string | number; label: string; sub: string }) {
+  return (
+    <div style={{ background: '#fff', borderRadius: 12, padding: '18px 16px', boxShadow: '0 1px 2px rgba(0,0,0,0.04)' }}>
+      <div style={{ fontSize: 24, fontWeight: 700, color: '#d49545', lineHeight: 1.2 }}>{value}</div>
+      <div style={{ fontSize: 12, color: '#6b6b6b', fontWeight: 600, marginTop: 4 }}>{label}</div>
+      <div style={{ fontSize: 11, color: '#a0a0a0', marginTop: 4 }}>{sub}</div>
+    </div>
+  );
+}

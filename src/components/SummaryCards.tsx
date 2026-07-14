@@ -1,5 +1,6 @@
 import type { Account } from '../types';
 import COLORS from '../colors';
+import { UsersIcon, HeartIcon, PinIcon, BriefcaseIcon, ShopIcon, BuildingIcon, MailIcon } from './Icons';
 
 interface Props {
   accounts: Account[];
@@ -19,24 +20,32 @@ export default function SummaryCards({ accounts, totalScraped }: Props) {
   const withFollowers = accounts.filter(a => parseInt(a.followers) > 0).length;
 
   const cards = [
-    { label: 'Total Akun', value: totalScraped, sub: `+ ${accounts.length} lokasi terdeteksi` },
-    { label: 'Follower', value: formatNum(totalFollowers), sub: `${withFollowers} akun dengan follower` },
-    { label: 'Lokasi Terdeteksi', value: withLocation, sub: `${((withLocation/totalScraped)*100).toFixed(0)}% dari total` },
-    { label: 'Monetisasi', value: monetized, sub: `${((monetized/totalScraped)*100).toFixed(0)}% punya indikasi` },
-    { label: 'TikTok Shop', value: withShop, sub: `${((withShop/totalScraped)*100).toFixed(0)}% aktif shop` },
-    { label: 'Akun Bisnis', value: business, sub: `${verified} terverifikasi` },
-    { label: 'Email Publik', value: withEmail, sub: `${live} live streaming` },
+    { Icon: UsersIcon, label: 'Total Akun', value: totalScraped, sub: `${accounts.length} data terkumpul`, color: COLORS.orangeDarker, bg: COLORS.orangeLight },
+    { Icon: HeartIcon, label: 'Total Followers', value: formatNum(totalFollowers), sub: `${withFollowers} akun punya follower`, color: '#DC2626', bg: '#FEF2F2' },
+    { Icon: PinIcon, label: 'Lokasi Terdeteksi', value: withLocation, sub: `${((withLocation/totalScraped)*100).toFixed(0)}% dari total`, color: COLORS.blue, bg: COLORS.blueLight },
+    { Icon: BriefcaseIcon, label: 'Monetisasi', value: monetized, sub: `${((monetized/totalScraped)*100).toFixed(0)}% indikasi`, color: COLORS.purple, bg: COLORS.purpleLight },
+    { Icon: ShopIcon, label: 'TikTok Shop', value: withShop, sub: `${((withShop/totalScraped)*100).toFixed(0)}% aktif`, color: '#059669', bg: '#ECFDF5' },
+    { Icon: BuildingIcon, label: 'Akun Bisnis', value: business, sub: `${verified} terverifikasi`, color: '#2563EB', bg: '#EFF6FF' },
+    { Icon: MailIcon, label: 'Email Publik', value: withEmail, sub: `${live} live streaming`, color: '#7C3AED', bg: '#F5F3FF' },
   ];
 
   return (
-    <div style={gridStyle}>
-      {cards.map(card => (
-        <div key={card.label} style={cardStyle}>
-          <div style={valueStyle}>{card.value}</div>
-          <div style={labelStyle}>{card.label}</div>
-          <div style={subStyle}>{card.sub}</div>
-        </div>
-      ))}
+    <div className="responsive-cards">
+      {cards.map(card => {
+        const Icon = card.Icon;
+        return (
+          <div key={card.label} style={cardStyle}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 10 }}>
+              <span style={{ ...iconWrapStyle, background: card.bg, color: card.color }}>
+                <Icon size={18} />
+              </span>
+              <span style={labelStyle}>{card.label}</span>
+            </div>
+            <div style={{ ...valueStyle, color: card.color }}>{card.value}</div>
+            <div style={subStyle}>{card.sub}</div>
+          </div>
+        );
+      })}
     </div>
   );
 }
@@ -47,26 +56,27 @@ function formatNum(n: number): string {
   return n.toString();
 }
 
-const gridStyle: React.CSSProperties = {
-  display: 'grid',
-  gridTemplateColumns: 'repeat(auto-fit, minmax(160px, 1fr))',
-  gap: 16,
-  marginBottom: 28,
-};
-
 const cardStyle: React.CSSProperties = {
   background: COLORS.white,
-  border: `1px solid ${COLORS.border}`,
   borderRadius: 12,
-  padding: '18px 16px',
-  textAlign: 'center',
-  boxShadow: '0 2px 8px rgba(0,0,0,0.03)',
+  padding: '18px',
+  boxShadow: '0 1px 3px rgba(0,0,0,0.06)',
+  border: `1px solid ${COLORS.borderLight}`,
+};
+
+const iconWrapStyle: React.CSSProperties = {
+  width: 34,
+  height: 34,
+  borderRadius: 8,
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  flexShrink: 0,
 };
 
 const valueStyle: React.CSSProperties = {
-  fontSize: 26,
+  fontSize: 22,
   fontWeight: 700,
-  color: COLORS.orangeDark,
   lineHeight: 1.2,
 };
 
@@ -74,14 +84,10 @@ const labelStyle: React.CSSProperties = {
   fontSize: 12,
   fontWeight: 600,
   color: COLORS.textSecondary,
-  marginTop: 4,
-  textTransform: 'uppercase',
-  letterSpacing: '0.5px',
 };
 
 const subStyle: React.CSSProperties = {
   fontSize: 11,
-  color: COLORS.textSecondary,
-  marginTop: 6,
-  opacity: 0.7,
+  color: COLORS.textMuted,
+  marginTop: 4,
 };

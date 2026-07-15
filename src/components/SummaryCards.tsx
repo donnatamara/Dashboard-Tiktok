@@ -29,24 +29,48 @@ export default function SummaryCards({ accounts, totalScraped }: Props) {
     { Icon: MailIcon, label: 'Email Publik', value: withEmail, sub: `${live} live streaming`, color: '#7C3AED', bg: '#F5F3FF' },
   ];
 
+  const classDist = accounts.reduce((map, a) => {
+    const cls = a.classification || 'personal';
+    map[cls] = (map[cls] || 0) + 1;
+    return map;
+  }, {} as Record<string, number>);
+  const classEntries = Object.entries(classDist).sort((a, b) => b[1] - a[1]);
+
   return (
-    <div className="responsive-cards">
-      {cards.map(card => {
-        const Icon = card.Icon;
-        return (
-          <div key={card.label} style={cardStyle}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 10 }}>
-              <span style={{ ...iconWrapStyle, background: card.bg, color: card.color }}>
-                <Icon size={18} />
-              </span>
-              <span style={labelStyle}>{card.label}</span>
+    <>
+      <div className="responsive-cards">
+        {cards.map(card => {
+          const Icon = card.Icon;
+          return (
+            <div key={card.label} style={cardStyle}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 10 }}>
+                <span style={{ ...iconWrapStyle, background: card.bg, color: card.color }}>
+                  <Icon size={18} />
+                </span>
+                <span style={labelStyle}>{card.label}</span>
+              </div>
+              <div style={{ ...valueStyle, color: card.color }}>{card.value}</div>
+              <div style={subStyle}>{card.sub}</div>
             </div>
-            <div style={{ ...valueStyle, color: card.color }}>{card.value}</div>
-            <div style={subStyle}>{card.sub}</div>
+          );
+        })}
+      </div>
+      {classEntries.length > 0 && (
+        <div style={{ marginTop: 20, background: COLORS.white, borderRadius: 12, padding: 18, border: `1px solid ${COLORS.borderLight}` }}>
+          <div style={{ fontSize: 13, fontWeight: 600, color: COLORS.textSecondary, marginBottom: 12 }}>Klasifikasi Akun</div>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10 }}>
+            {classEntries.map(([cls, count]) => {
+              const pct = ((count / accounts.length) * 100).toFixed(0);
+              return (
+                <div key={cls} style={{ background: CLASS_BG[cls] || '#f0f0f0', color: CLASS_COLOR[cls] || '#666', borderRadius: 20, padding: '6px 14px', fontSize: 13, fontWeight: 600 }}>
+                  {cls}: {count} ({pct}%)
+                </div>
+              );
+            })}
           </div>
-        );
-      })}
-    </div>
+        </div>
+      )}
+    </>
   );
 }
 
@@ -90,4 +114,19 @@ const subStyle: React.CSSProperties = {
   fontSize: 11,
   color: COLORS.textMuted,
   marginTop: 4,
+};
+
+const CLASS_BG: Record<string, string> = {
+  travel: '#e8f5e9',
+  foodvloger: '#fff3e0',
+  lifestyle: '#e3f2fd',
+  affiliate: '#fce4ec',
+  personal: '#f3e5f5',
+};
+const CLASS_COLOR: Record<string, string> = {
+  travel: '#2e7d32',
+  foodvloger: '#e65100',
+  lifestyle: '#1565c0',
+  affiliate: '#c62828',
+  personal: '#6a1b9a',
 };

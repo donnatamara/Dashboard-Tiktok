@@ -33,5 +33,7 @@ export interface Account {
   average_comments: string;
   average_shares: string;
   engagement_rate: string;
+  classification: string;
+  product_count: string;
   scraped_at: string;
 }

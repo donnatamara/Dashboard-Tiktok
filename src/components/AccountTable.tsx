@@ -17,6 +17,8 @@ export default function AccountTable({ accounts }: Props) {
   const [sortDir, setSortDir] = useState<SortDir>('desc');
   const [filterLocation, setFilterLocation] = useState('');
   const [filterMonetized, setFilterMonetized] = useState<string>('');
+  const [filterShop, setFilterShop] = useState<string>('');
+  const [filterClass, setFilterClass] = useState('');
   const [page, setPage] = useState(0);
   const perPage = 25;
 
@@ -25,6 +27,12 @@ export default function AccountTable({ accounts }: Props) {
     accounts.forEach(a => {
       if (a.location_detected && a.location_detected !== 'Purwokerto') set.add(a.location_detected);
     });
+    return Array.from(set).sort();
+  }, [accounts]);
+
+  const classOptions = useMemo(() => {
+    const set = new Set<string>();
+    accounts.forEach(a => { if (a.classification) set.add(a.classification); });
     return Array.from(set).sort();
   }, [accounts]);
 
@@ -44,6 +52,9 @@ export default function AccountTable({ accounts }: Props) {
     }
     if (filterMonetized === 'ya') list = list.filter(a => a.monetization === '1');
     else if (filterMonetized === 'tidak') list = list.filter(a => a.monetization !== '1');
+    if (filterShop === 'ya') list = list.filter(a => a.has_tiktok_shop === '1');
+    else if (filterShop === 'tidak') list = list.filter(a => a.has_tiktok_shop !== '1');
+    if (filterClass) list = list.filter(a => a.classification === filterClass);
 
     list.sort((a, b) => {
       const dir = sortDir === 'desc' ? -1 : 1;
@@ -53,7 +64,7 @@ export default function AccountTable({ accounts }: Props) {
       return dir * (va - vb);
     });
     return list;
-  }, [accounts, search, sortKey, sortDir, filterLocation, filterMonetized]);
+  }, [accounts, search, sortKey, sortDir, filterLocation, filterMonetized, filterShop, filterClass]);
 
   const totalPages = Math.ceil(filtered.length / perPage);
   const pageData = filtered.slice(page * perPage, (page + 1) * perPage);
@@ -72,10 +83,12 @@ export default function AccountTable({ accounts }: Props) {
     setSearch('');
     setFilterLocation('');
     setFilterMonetized('');
+    setFilterShop('');
+    setFilterClass('');
     setPage(0);
   };
 
-  const hasFilters = search || filterLocation || filterMonetized;
+  const hasFilters = search || filterLocation || filterMonetized || filterShop || filterClass;
 
   return (
     <div>
@@ -97,6 +110,23 @@ export default function AccountTable({ accounts }: Props) {
         >
           <option value="">Semua Lokasi</option>
           {locations.map(l => <option key={l} value={l}>{l}</option>)}
+        </select>
+        <select
+          value={filterClass}
+          onChange={e => { setFilterClass(e.target.value); setPage(0); }}
+          style={selectStyle}
+        >
+          <option value="">Semua Kelas</option>
+          {classOptions.map(c => <option key={c} value={c}>{c}</option>)}
+        </select>
+        <select
+          value={filterShop}
+          onChange={e => { setFilterShop(e.target.value); setPage(0); }}
+          style={selectStyle}
+        >
+          <option value="">TikTok Shop: Semua</option>
+          <option value="ya">Shop: Ya</option>
+          <option value="tidak">Shop: Tidak</option>
         </select>
         <select
           value={filterMonetized}
@@ -124,11 +154,13 @@ export default function AccountTable({ accounts }: Props) {
               <th style={thNumStyle}>#</th>
               <th style={thStyleSortable} onClick={() => toggleSort('username')}>Akun{sortIcon('username')}</th>
               <th style={thStyle}>Lokasi</th>
+              <th style={thStyle}>Kelas</th>
               <th style={thStyleSortable} onClick={() => toggleSort('followers')}>Followers{sortIcon('followers')}</th>
               <th style={thStyleSortable} onClick={() => toggleSort('total_likes')}>Like{sortIcon('total_likes')}</th>
               <th style={thStyleSortable} onClick={() => toggleSort('video_count')}>Video{sortIcon('video_count')}</th>
               <th style={thStyleSortable} onClick={() => toggleSort('average_views')}>Rata View{sortIcon('average_views')}</th>
               <th style={thStyleSortable} onClick={() => toggleSort('engagement_rate')}>ER{sortIcon('engagement_rate')}</th>
+              <th style={thStyle}>Produk</th>
               <th style={thStyle}>Shop</th>
               <th style={thStyle}>Monetisasi</th>
               <th style={thStyle}>Bisnis</th>
@@ -174,6 +206,13 @@ export default function AccountTable({ accounts }: Props) {
                     <div style={{ fontSize: 10, color: COLORS.textMuted, marginTop: 2 }}>{acc.location_source}</div>
                   )}
                 </td>
+                <td style={tdStyle}>
+                  {acc.classification ? (
+                    <span style={classBadgeStyle(acc.classification)}>{acc.classification}</span>
+                  ) : (
+                    <span style={{ color: COLORS.textMuted, fontSize: 11 }}>—</span>
+                  )}
+                </td>
                 <td style={{ ...tdStyle, fontWeight: 600 } as React.CSSProperties}>{fmt(acc.followers)}</td>
                 <td style={tdStyle}>{fmt(acc.total_likes)}</td>
                 <td style={tdStyle}>{fmt(acc.video_count)}</td>
@@ -183,6 +222,13 @@ export default function AccountTable({ accounts }: Props) {
                     <span style={{ color: COLORS.orangeDarker, fontWeight: 700, fontSize: 13 }}>
                       {parseFloat(acc.engagement_rate).toFixed(2)}%
                     </span>
+                  ) : (
+                    <span style={{ color: COLORS.textMuted, fontSize: 11 }}>—</span>
+                  )}
+                </td>
+                <td style={{ ...tdStyle, textAlign: 'center', fontWeight: 600 } as React.CSSProperties}>
+                  {acc.product_count && acc.product_count !== "0" ? (
+                    <span style={{ color: '#059669', fontSize: 13 }}>{acc.product_count}</span>
                   ) : (
                     <span style={{ color: COLORS.textMuted, fontSize: 11 }}>—</span>
                   )}
@@ -212,7 +258,7 @@ export default function AccountTable({ accounts }: Props) {
             ))}
             {pageData.length === 0 && (
               <tr>
-                <td colSpan={12} style={{ textAlign: 'center', padding: 40, color: COLORS.textMuted }}>
+                <td colSpan={14} style={{ textAlign: 'center', padding: 40, color: COLORS.textMuted }}>
                   <div style={{ marginBottom: 8, opacity: 0.5 }}><SearchIcon size={32} color={COLORS.textMuted} /></div>
                   <div style={{ fontWeight: 600, marginBottom: 4 }}>Tidak ada akun ditemukan</div>
                   <div style={{ fontSize: 12 }}>Coba ubah filter atau kata kunci pencarian</div>
@@ -409,6 +455,28 @@ const locBadgeStyle: React.CSSProperties = {
   borderRadius: 6,
   display: 'inline-block',
 };
+
+const CLASS_COLORS: Record<string, { bg: string; color: string }> = {
+  travel: { bg: '#e8f5e9', color: '#2e7d32' },
+  foodvloger: { bg: '#fff3e0', color: '#e65100' },
+  lifestyle: { bg: '#e3f2fd', color: '#1565c0' },
+  affiliate: { bg: '#fce4ec', color: '#c62828' },
+  personal: { bg: '#f3e5f5', color: '#6a1b9a' },
+};
+
+function classBadgeStyle(cls: string): React.CSSProperties {
+  const c = CLASS_COLORS[cls] || { bg: '#f0f0f0', color: '#666' };
+  return {
+    background: c.bg,
+    color: c.color,
+    fontSize: 11,
+    fontWeight: 700,
+    padding: '3px 10px',
+    borderRadius: 20,
+    display: 'inline-block',
+    textTransform: 'capitalize',
+  };
+}
 
 const pageBtnStyle: React.CSSProperties = {
   padding: '6px 10px',

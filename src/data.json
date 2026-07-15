@@ -35,7 +35,7 @@
     "average_shares": "56.0",
     "engagement_rate": "0.0123",
     "scraped_at": "2026-07-14 19:19:05",
-    "classification": "personal",
+    "classification": "lifestyle",
     "product_count": "0"
   },
   {
@@ -113,7 +113,7 @@
     "average_shares": "1705.22",
     "engagement_rate": "0.2222",
     "scraped_at": "2026-07-14 19:13:56",
-    "classification": "foodvloger",
+    "classification": "lifestyle",
     "product_count": "0"
   },
   {
@@ -308,7 +308,7 @@
     "average_shares": "17180.2",
     "engagement_rate": "3.356",
     "scraped_at": "2026-07-14 18:24:10",
-    "classification": "foodvloger",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -347,7 +347,7 @@
     "average_shares": "142.0",
     "engagement_rate": "0.1068",
     "scraped_at": "2026-07-14 17:42:58",
-    "classification": "travel",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -425,7 +425,7 @@
     "average_shares": "1418.8",
     "engagement_rate": "1.2988",
     "scraped_at": "2026-07-14 19:15:06",
-    "classification": "travel",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -620,7 +620,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-13 14:05:57",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -737,7 +737,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-11 16:51:23",
-    "classification": "personal",
+    "classification": "lifestyle",
     "product_count": "0"
   },
   {
@@ -932,7 +932,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 22:21:18",
-    "classification": "personal",
+    "classification": "travel",
     "product_count": "0"
   },
   {
@@ -1127,7 +1127,7 @@
     "average_shares": "37.33",
     "engagement_rate": "0.1067",
     "scraped_at": "2026-07-14 18:52:35",
-    "classification": "foodvloger",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -1361,7 +1361,7 @@
     "average_shares": "1.0",
     "engagement_rate": "0.0372",
     "scraped_at": "2026-07-14 19:05:55",
-    "classification": "personal",
+    "classification": "travel",
     "product_count": "0"
   },
   {
@@ -1400,7 +1400,7 @@
     "average_shares": "6.12",
     "engagement_rate": "0.1756",
     "scraped_at": "2026-07-14 18:01:15",
-    "classification": "foodvloger",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -1478,7 +1478,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 21:05:19",
-    "classification": "personal",
+    "classification": "foodvloger",
     "product_count": "0"
   },
   {
@@ -1517,7 +1517,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-15 14:37:38",
-    "classification": "personal",
+    "classification": "travel",
     "product_count": "0"
   },
   {
@@ -1556,7 +1556,7 @@
     "average_shares": "",
     "engagement_rate": "0.0007",
     "scraped_at": "2026-07-13 14:25:18",
-    "classification": "personal",
+    "classification": "foodvloger",
     "product_count": "0"
   },
   {
@@ -1712,7 +1712,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-11 16:21:31",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -1751,7 +1751,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 22:20:43",
-    "classification": "personal",
+    "classification": "travel",
     "product_count": "0"
   },
   {
@@ -1790,7 +1790,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-13 14:23:12",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -1985,7 +1985,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 21:14:30",
-    "classification": "personal",
+    "classification": "lifestyle",
     "product_count": "0"
   },
   {
@@ -2141,7 +2141,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 18:00:35",
-    "classification": "personal",
+    "classification": "travel",
     "product_count": "0"
   },
   {
@@ -2180,7 +2180,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 23:18:36",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -2258,7 +2258,7 @@
     "average_shares": "1.0",
     "engagement_rate": "0.0232",
     "scraped_at": "2026-07-14 22:20:11",
-    "classification": "personal",
+    "classification": "travel",
     "product_count": "0"
   },
   {
@@ -2297,7 +2297,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-11 18:46:23",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -2336,7 +2336,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-11 18:11:48",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -2375,7 +2375,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-11 16:54:36",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -2414,7 +2414,7 @@
     "average_shares": "2.33",
     "engagement_rate": "0.0775",
     "scraped_at": "2026-07-14 19:42:02",
-    "classification": "travel",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -2570,7 +2570,7 @@
     "average_shares": "103.6",
     "engagement_rate": "4.0546",
     "scraped_at": "2026-07-14 19:14:20",
-    "classification": "personal",
+    "classification": "lifestyle",
     "product_count": "0"
   },
   {
@@ -2609,7 +2609,7 @@
     "average_shares": "809.67",
     "engagement_rate": "12.2942",
     "scraped_at": "2026-07-14 18:46:50",
-    "classification": "foodvloger",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -2648,7 +2648,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 20:53:26",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -2687,7 +2687,7 @@
     "average_shares": "215.83",
     "engagement_rate": "2.0762",
     "scraped_at": "2026-07-14 19:56:25",
-    "classification": "foodvloger",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -2726,7 +2726,7 @@
     "average_shares": "",
     "engagement_rate": "0.0018",
     "scraped_at": "2026-07-11 18:11:06",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -2804,7 +2804,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-11 16:19:19",
-    "classification": "personal",
+    "classification": "foodvloger",
     "product_count": "0"
   },
   {
@@ -3038,7 +3038,7 @@
     "average_shares": "1.0",
     "engagement_rate": "0.0719",
     "scraped_at": "2026-07-14 18:51:06",
-    "classification": "foodvloger",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -3077,7 +3077,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 22:05:19",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -3155,7 +3155,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 21:01:23",
-    "classification": "personal",
+    "classification": "travel",
     "product_count": "0"
   },
   {
@@ -3272,7 +3272,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-11 16:56:39",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -3506,7 +3506,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 22:43:05",
-    "classification": "personal",
+    "classification": "lifestyle",
     "product_count": "0"
   },
   {
@@ -3545,7 +3545,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 20:49:42",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -3584,7 +3584,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-11 17:23:53",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -3701,7 +3701,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-13 14:06:48",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -3740,7 +3740,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-11 17:32:56",
-    "classification": "personal",
+    "classification": "foodvloger",
     "product_count": "0"
   },
   {
@@ -3818,7 +3818,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 21:58:32",
-    "classification": "personal",
+    "classification": "foodvloger",
     "product_count": "0"
   },
   {
@@ -3857,7 +3857,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-11 17:37:43",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -3896,7 +3896,7 @@
     "average_shares": "167.67",
     "engagement_rate": "0.9763",
     "scraped_at": "2026-07-14 18:51:49",
-    "classification": "personal",
+    "classification": "foodvloger",
     "product_count": "0"
   },
   {
@@ -3935,7 +3935,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-11 16:15:04",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -4325,7 +4325,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 22:11:57",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -4442,7 +4442,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-15 00:21:30",
-    "classification": "personal",
+    "classification": "travel",
     "product_count": "0"
   },
   {
@@ -4481,7 +4481,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-11 16:24:22",
-    "classification": "personal",
+    "classification": "lifestyle",
     "product_count": "0"
   },
   {
@@ -4559,7 +4559,7 @@
     "average_shares": "99.5",
     "engagement_rate": "3.0289",
     "scraped_at": "2026-07-14 19:36:42",
-    "classification": "foodvloger",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -4637,7 +4637,7 @@
     "average_shares": "12.56",
     "engagement_rate": "0.5895",
     "scraped_at": "2026-07-14 17:35:11",
-    "classification": "foodvloger",
+    "classification": "lifestyle",
     "product_count": "0"
   },
   {
@@ -4871,7 +4871,7 @@
     "average_shares": "76.78",
     "engagement_rate": "3.2235",
     "scraped_at": "2026-07-14 19:51:54",
-    "classification": "foodvloger",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -4910,7 +4910,7 @@
     "average_shares": "3.29",
     "engagement_rate": "0.2766",
     "scraped_at": "2026-07-14 19:50:49",
-    "classification": "foodvloger",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -5066,7 +5066,7 @@
     "average_shares": "3.44",
     "engagement_rate": "0.669",
     "scraped_at": "2026-07-14 19:17:11",
-    "classification": "foodvloger",
+    "classification": "travel",
     "product_count": "0"
   },
   {
@@ -5105,7 +5105,7 @@
     "average_shares": "30.5",
     "engagement_rate": "0.4553",
     "scraped_at": "2026-07-14 19:42:47",
-    "classification": "foodvloger",
+    "classification": "travel",
     "product_count": "0"
   },
   {
@@ -5183,7 +5183,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-11 17:51:51",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -5300,7 +5300,7 @@
     "average_shares": "395.83",
     "engagement_rate": "2.3063",
     "scraped_at": "2026-07-14 19:00:41",
-    "classification": "foodvloger",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -5651,7 +5651,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-11 16:45:09",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -5729,7 +5729,7 @@
     "average_shares": "1.0",
     "engagement_rate": "0.0087",
     "scraped_at": "2026-07-15 00:25:19",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -5768,7 +5768,7 @@
     "average_shares": "1.0",
     "engagement_rate": "0.0804",
     "scraped_at": "2026-07-14 20:40:04",
-    "classification": "foodvloger",
+    "classification": "travel",
     "product_count": "0"
   },
   {
@@ -5963,7 +5963,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 23:58:21",
-    "classification": "personal",
+    "classification": "foodvloger",
     "product_count": "0"
   },
   {
@@ -6119,7 +6119,7 @@
     "average_shares": "49.11",
     "engagement_rate": "1.4741",
     "scraped_at": "2026-07-14 19:50:28",
-    "classification": "foodvloger",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -6470,7 +6470,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-11 16:58:26",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -6509,7 +6509,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-11 16:53:55",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -6626,7 +6626,7 @@
     "average_shares": "8.33",
     "engagement_rate": "1.1722",
     "scraped_at": "2026-07-14 17:04:55",
-    "classification": "foodvloger",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -6704,7 +6704,7 @@
     "average_shares": "3.0",
     "engagement_rate": "0.1154",
     "scraped_at": "2026-07-14 19:13:34",
-    "classification": "foodvloger",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -6782,7 +6782,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-11 17:38:20",
-    "classification": "personal",
+    "classification": "lifestyle",
     "product_count": "0"
   },
   {
@@ -6821,7 +6821,7 @@
     "average_shares": "53.8",
     "engagement_rate": "5.8231",
     "scraped_at": "2026-07-14 17:32:12",
-    "classification": "travel",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -6899,7 +6899,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 22:48:41",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -6938,7 +6938,7 @@
     "average_shares": "9.0",
     "engagement_rate": "0.3452",
     "scraped_at": "2026-07-14 18:04:19",
-    "classification": "foodvloger",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -7211,7 +7211,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 17:59:14",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -7250,7 +7250,7 @@
     "average_shares": "3.0",
     "engagement_rate": "0.2208",
     "scraped_at": "2026-07-14 18:29:57",
-    "classification": "foodvloger",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -7367,7 +7367,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 22:52:53",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -7484,7 +7484,7 @@
     "average_shares": "",
     "engagement_rate": "0.0647",
     "scraped_at": "2026-07-14 17:40:32",
-    "classification": "personal",
+    "classification": "lifestyle",
     "product_count": "0"
   },
   {
@@ -7562,7 +7562,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 23:15:31",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -7796,7 +7796,7 @@
     "average_shares": "28.2",
     "engagement_rate": "6.7908",
     "scraped_at": "2026-07-14 19:27:25",
-    "classification": "foodvloger",
+    "classification": "lifestyle",
     "product_count": "0"
   },
   {
@@ -7835,7 +7835,7 @@
     "average_shares": "17.57",
     "engagement_rate": "0.9454",
     "scraped_at": "2026-07-14 19:40:10",
-    "classification": "foodvloger",
+    "classification": "travel",
     "product_count": "0"
   },
   {
@@ -8108,7 +8108,7 @@
     "average_shares": "3.78",
     "engagement_rate": "1.638",
     "scraped_at": "2026-07-14 18:43:00",
-    "classification": "affiliate",
+    "classification": "lifestyle",
     "product_count": "0"
   },
   {
@@ -8186,7 +8186,7 @@
     "average_shares": "77.4",
     "engagement_rate": "5.0903",
     "scraped_at": "2026-07-14 19:40:31",
-    "classification": "foodvloger",
+    "classification": "lifestyle",
     "product_count": "0"
   },
   {
@@ -8225,7 +8225,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-11 18:16:49",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -8303,7 +8303,7 @@
     "average_shares": "1.5",
     "engagement_rate": "0.0902",
     "scraped_at": "2026-07-14 19:11:05",
-    "classification": "foodvloger",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -8342,7 +8342,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 21:55:54",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -8381,7 +8381,7 @@
     "average_shares": "",
     "engagement_rate": "0.1063",
     "scraped_at": "2026-07-14 21:49:04",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -8459,7 +8459,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-15 00:10:12",
-    "classification": "personal",
+    "classification": "foodvloger",
     "product_count": "0"
   },
   {
@@ -8498,7 +8498,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 20:30:17",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -8576,7 +8576,7 @@
     "average_shares": "2.25",
     "engagement_rate": "0.5332",
     "scraped_at": "2026-07-14 17:05:55",
-    "classification": "foodvloger",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -8654,7 +8654,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-11 18:05:35",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -8732,7 +8732,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-11 17:16:07",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -8771,7 +8771,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 22:14:27",
-    "classification": "personal",
+    "classification": "lifestyle",
     "product_count": "0"
   },
   {
@@ -8927,7 +8927,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 21:11:49",
-    "classification": "personal",
+    "classification": "travel",
     "product_count": "0"
   },
   {
@@ -9278,7 +9278,7 @@
     "average_shares": "3.5",
     "engagement_rate": "0.3024",
     "scraped_at": "2026-07-14 18:59:58",
-    "classification": "foodvloger",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -9356,7 +9356,7 @@
     "average_shares": "1.0",
     "engagement_rate": "0.014",
     "scraped_at": "2026-07-11 18:37:11",
-    "classification": "personal",
+    "classification": "lifestyle",
     "product_count": "0"
   },
   {
@@ -9434,7 +9434,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 23:51:52",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -9512,7 +9512,7 @@
     "average_shares": "18.5",
     "engagement_rate": "6.6159",
     "scraped_at": "2026-07-14 17:38:06",
-    "classification": "foodvloger",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -9668,7 +9668,7 @@
     "average_shares": "3011.89",
     "engagement_rate": "312.9522",
     "scraped_at": "2026-07-14 18:01:57",
-    "classification": "foodvloger",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -9707,7 +9707,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-11 17:36:19",
-    "classification": "personal",
+    "classification": "foodvloger",
     "product_count": "0"
   },
   {
@@ -9824,7 +9824,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 20:05:06",
-    "classification": "personal",
+    "classification": "foodvloger",
     "product_count": "0"
   },
   {
@@ -9902,7 +9902,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 22:37:43",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -9941,7 +9941,7 @@
     "average_shares": "168.5",
     "engagement_rate": "32.3101",
     "scraped_at": "2026-07-14 17:47:41",
-    "classification": "foodvloger",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -10019,7 +10019,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 21:18:04",
-    "classification": "personal",
+    "classification": "travel",
     "product_count": "0"
   },
   {
@@ -10058,7 +10058,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-11 17:08:27",
-    "classification": "personal",
+    "classification": "foodvloger",
     "product_count": "0"
   },
   {
@@ -10097,7 +10097,7 @@
     "average_shares": "10214.1",
     "engagement_rate": "2998.7699",
     "scraped_at": "2026-07-14 19:53:13",
-    "classification": "foodvloger",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -10253,7 +10253,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-15 00:14:45",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -10604,7 +10604,7 @@
     "average_shares": "9.5",
     "engagement_rate": "1.3378",
     "scraped_at": "2026-07-14 19:41:19",
-    "classification": "foodvloger",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -10682,7 +10682,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-11 17:56:23",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -10760,7 +10760,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 22:14:51",
-    "classification": "personal",
+    "classification": "travel",
     "product_count": "0"
   },
   {
@@ -10838,7 +10838,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 21:14:55",
-    "classification": "personal",
+    "classification": "foodvloger",
     "product_count": "0"
   },
   {
@@ -10916,7 +10916,7 @@
     "average_shares": "6.17",
     "engagement_rate": "0.8476",
     "scraped_at": "2026-07-14 18:28:40",
-    "classification": "travel",
+    "classification": "foodvloger",
     "product_count": "0"
   },
   {
@@ -10994,7 +10994,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-11 17:28:08",
-    "classification": "personal",
+    "classification": "foodvloger",
     "product_count": "0"
   },
   {
@@ -11072,7 +11072,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-13 14:12:56",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -11111,7 +11111,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-11 16:32:06",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -11150,7 +11150,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 18:34:36",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -11384,7 +11384,7 @@
     "average_shares": "413.6",
     "engagement_rate": "215.9548",
     "scraped_at": "2026-07-14 19:15:55",
-    "classification": "travel",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -11462,7 +11462,7 @@
     "average_shares": "197.33",
     "engagement_rate": "2.9607",
     "scraped_at": "2026-07-14 17:32:42",
-    "classification": "foodvloger",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -11540,7 +11540,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 23:49:52",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -11618,7 +11618,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 22:13:54",
-    "classification": "personal",
+    "classification": "travel",
     "product_count": "0"
   },
   {
@@ -11657,7 +11657,7 @@
     "average_shares": "2229.56",
     "engagement_rate": "745.6251",
     "scraped_at": "2026-07-14 18:03:28",
-    "classification": "foodvloger",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -11735,7 +11735,7 @@
     "average_shares": "3.71",
     "engagement_rate": "0.7869",
     "scraped_at": "2026-07-14 21:27:23",
-    "classification": "foodvloger",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -12047,7 +12047,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 21:25:24",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -12125,7 +12125,7 @@
     "average_shares": "203.5",
     "engagement_rate": "19.9008",
     "scraped_at": "2026-07-14 20:40:38",
-    "classification": "foodvloger",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -12203,7 +12203,7 @@
     "average_shares": "131.0",
     "engagement_rate": "36.2285",
     "scraped_at": "2026-07-14 17:34:05",
-    "classification": "travel",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -12320,7 +12320,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-11 17:52:27",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -12515,7 +12515,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-11 17:56:02",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -12593,7 +12593,7 @@
     "average_shares": "1.0",
     "engagement_rate": "0.8544",
     "scraped_at": "2026-07-14 17:38:54",
-    "classification": "foodvloger",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -12788,7 +12788,7 @@
     "average_shares": "4.67",
     "engagement_rate": "0.8691",
     "scraped_at": "2026-07-14 19:52:23",
-    "classification": "affiliate",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -12827,7 +12827,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-15 00:27:10",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -12866,7 +12866,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 22:43:33",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -12983,7 +12983,7 @@
     "average_shares": "18.38",
     "engagement_rate": "3.5601",
     "scraped_at": "2026-07-14 19:11:56",
-    "classification": "foodvloger",
+    "classification": "lifestyle",
     "product_count": "0"
   },
   {
@@ -13100,7 +13100,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-11 17:28:28",
-    "classification": "personal",
+    "classification": "foodvloger",
     "product_count": "0"
   },
   {
@@ -13217,7 +13217,7 @@
     "average_shares": "",
     "engagement_rate": "0.0602",
     "scraped_at": "2026-07-11 17:27:27",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -13334,7 +13334,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-11 17:53:45",
-    "classification": "personal",
+    "classification": "travel",
     "product_count": "0"
   },
   {
@@ -13373,7 +13373,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 22:04:30",
-    "classification": "personal",
+    "classification": "travel",
     "product_count": "0"
   },
   {
@@ -13490,7 +13490,7 @@
     "average_shares": "7.0",
     "engagement_rate": "2.1355",
     "scraped_at": "2026-07-14 18:25:21",
-    "classification": "foodvloger",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -13568,7 +13568,7 @@
     "average_shares": "5.2",
     "engagement_rate": "11.793",
     "scraped_at": "2026-07-14 17:34:33",
-    "classification": "foodvloger",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -13607,7 +13607,7 @@
     "average_shares": "4.5",
     "engagement_rate": "1.0801",
     "scraped_at": "2026-07-14 17:46:26",
-    "classification": "foodvloger",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -13724,7 +13724,7 @@
     "average_shares": "1.0",
     "engagement_rate": "1.0151",
     "scraped_at": "2026-07-14 17:45:42",
-    "classification": "foodvloger",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -13763,7 +13763,7 @@
     "average_shares": "",
     "engagement_rate": "0.7455",
     "scraped_at": "2026-07-14 18:35:39",
-    "classification": "personal",
+    "classification": "lifestyle",
     "product_count": "0"
   },
   {
@@ -13919,7 +13919,7 @@
     "average_shares": "4.0",
     "engagement_rate": "0.4281",
     "scraped_at": "2026-07-14 18:58:50",
-    "classification": "foodvloger",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -13997,7 +13997,7 @@
     "average_shares": "4.0",
     "engagement_rate": "0.4158",
     "scraped_at": "2026-07-14 19:45:49",
-    "classification": "foodvloger",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -14075,7 +14075,7 @@
     "average_shares": "30.4",
     "engagement_rate": "5.884",
     "scraped_at": "2026-07-14 17:42:34",
-    "classification": "foodvloger",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -14192,7 +14192,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 22:19:16",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -14270,7 +14270,7 @@
     "average_shares": "6.0",
     "engagement_rate": "3.4805",
     "scraped_at": "2026-07-14 19:57:47",
-    "classification": "foodvloger",
+    "classification": "travel",
     "product_count": "0"
   },
   {
@@ -14309,7 +14309,7 @@
     "average_shares": "3.71",
     "engagement_rate": "3.133",
     "scraped_at": "2026-07-14 18:47:18",
-    "classification": "personal",
+    "classification": "foodvloger",
     "product_count": "0"
   },
   {
@@ -14426,7 +14426,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 21:03:32",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -14465,7 +14465,7 @@
     "average_shares": "297.29",
     "engagement_rate": "50.8307",
     "scraped_at": "2026-07-11 16:24:48",
-    "classification": "personal",
+    "classification": "foodvloger",
     "product_count": "0"
   },
   {
@@ -14582,7 +14582,7 @@
     "average_shares": "",
     "engagement_rate": "0.0351",
     "scraped_at": "2026-07-14 21:38:50",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -14660,7 +14660,7 @@
     "average_shares": "",
     "engagement_rate": "0.0704",
     "scraped_at": "2026-07-14 20:25:28",
-    "classification": "personal",
+    "classification": "lifestyle",
     "product_count": "0"
   },
   {
@@ -14972,7 +14972,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-11 17:43:50",
-    "classification": "personal",
+    "classification": "travel",
     "product_count": "0"
   },
   {
@@ -15128,7 +15128,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-15 00:13:24",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -15167,7 +15167,7 @@
     "average_shares": "66.29",
     "engagement_rate": "4.3406",
     "scraped_at": "2026-07-14 18:08:16",
-    "classification": "affiliate",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -15206,7 +15206,7 @@
     "average_shares": "9.67",
     "engagement_rate": "1.2285",
     "scraped_at": "2026-07-15 00:04:08",
-    "classification": "foodvloger",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -15245,7 +15245,7 @@
     "average_shares": "1.5",
     "engagement_rate": "0.2948",
     "scraped_at": "2026-07-14 18:56:40",
-    "classification": "foodvloger",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -15401,7 +15401,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 17:56:13",
-    "classification": "personal",
+    "classification": "lifestyle",
     "product_count": "0"
   },
   {
@@ -15479,7 +15479,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-11 16:44:27",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -15518,7 +15518,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-11 17:07:03",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -15557,7 +15557,7 @@
     "average_shares": "8.5",
     "engagement_rate": "27.7579",
     "scraped_at": "2026-07-14 17:49:55",
-    "classification": "lifestyle",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -15635,7 +15635,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-13 14:25:43",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -15674,7 +15674,7 @@
     "average_shares": "5.33",
     "engagement_rate": "2.2757",
     "scraped_at": "2026-07-14 19:33:03",
-    "classification": "foodvloger",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -15791,7 +15791,7 @@
     "average_shares": "7.67",
     "engagement_rate": "5.5532",
     "scraped_at": "2026-07-14 17:43:23",
-    "classification": "foodvloger",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -15869,7 +15869,7 @@
     "average_shares": "32.11",
     "engagement_rate": "16.2479",
     "scraped_at": "2026-07-14 20:43:13",
-    "classification": "foodvloger",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -16025,7 +16025,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-11 18:46:43",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -16064,7 +16064,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-15 00:23:24",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -16103,7 +16103,7 @@
     "average_shares": "45.1",
     "engagement_rate": "22.3235",
     "scraped_at": "2026-07-14 20:42:45",
-    "classification": "foodvloger",
+    "classification": "travel",
     "product_count": "0"
   },
   {
@@ -16142,7 +16142,7 @@
     "average_shares": "3.71",
     "engagement_rate": "1.2611",
     "scraped_at": "2026-07-14 18:42:18",
-    "classification": "foodvloger",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -16259,7 +16259,7 @@
     "average_shares": "1.33",
     "engagement_rate": "0.5858",
     "scraped_at": "2026-07-14 19:40:59",
-    "classification": "foodvloger",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -16298,7 +16298,7 @@
     "average_shares": "2.33",
     "engagement_rate": "3.7223",
     "scraped_at": "2026-07-14 19:58:59",
-    "classification": "travel",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -16376,7 +16376,7 @@
     "average_shares": "168.1",
     "engagement_rate": "35.0801",
     "scraped_at": "2026-07-14 18:58:21",
-    "classification": "foodvloger",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -16454,7 +16454,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 18:39:20",
-    "classification": "personal",
+    "classification": "travel",
     "product_count": "0"
   },
   {
@@ -16532,7 +16532,7 @@
     "average_shares": "55.2",
     "engagement_rate": "38.4428",
     "scraped_at": "2026-07-14 18:06:12",
-    "classification": "travel",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -16610,7 +16610,7 @@
     "average_shares": "",
     "engagement_rate": "0.5816",
     "scraped_at": "2026-07-15 00:05:38",
-    "classification": "foodvloger",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -16688,7 +16688,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 18:40:30",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -16883,7 +16883,7 @@
     "average_shares": "7.83",
     "engagement_rate": "2.1065",
     "scraped_at": "2026-07-14 18:48:40",
-    "classification": "foodvloger",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -16961,7 +16961,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 19:22:13",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -17117,7 +17117,7 @@
     "average_shares": "2.5",
     "engagement_rate": "4.4892",
     "scraped_at": "2026-07-14 18:23:01",
-    "classification": "travel",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -17273,7 +17273,7 @@
     "average_shares": "",
     "engagement_rate": "0.2128",
     "scraped_at": "2026-07-14 17:41:20",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -17312,7 +17312,7 @@
     "average_shares": "17.78",
     "engagement_rate": "8.5379",
     "scraped_at": "2026-07-14 19:59:31",
-    "classification": "foodvloger",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -17351,7 +17351,7 @@
     "average_shares": "2.1",
     "engagement_rate": "3.8585",
     "scraped_at": "2026-07-14 17:37:28",
-    "classification": "lifestyle",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -17390,7 +17390,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 23:09:39",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -17468,7 +17468,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 21:13:33",
-    "classification": "personal",
+    "classification": "lifestyle",
     "product_count": "0"
   },
   {
@@ -17585,7 +17585,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 23:03:53",
-    "classification": "personal",
+    "classification": "foodvloger",
     "product_count": "0"
   },
   {
@@ -17741,7 +17741,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 21:56:58",
-    "classification": "personal",
+    "classification": "travel",
     "product_count": "0"
   },
   {
@@ -17858,7 +17858,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 21:19:04",
-    "classification": "personal",
+    "classification": "foodvloger",
     "product_count": "0"
   },
   {
@@ -18014,7 +18014,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-13 14:19:08",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -18170,7 +18170,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-11 18:00:49",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -18248,7 +18248,7 @@
     "average_shares": "68.25",
     "engagement_rate": "7.9166",
     "scraped_at": "2026-07-14 19:01:01",
-    "classification": "foodvloger",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -18326,7 +18326,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-13 13:57:20",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -18521,7 +18521,7 @@
     "average_shares": "",
     "engagement_rate": "0.0612",
     "scraped_at": "2026-07-14 22:07:14",
-    "classification": "personal",
+    "classification": "travel",
     "product_count": "0"
   },
   {
@@ -18677,7 +18677,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-11 18:30:40",
-    "classification": "personal",
+    "classification": "foodvloger",
     "product_count": "0"
   },
   {
@@ -18716,7 +18716,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 23:23:07",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -18755,7 +18755,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 18:31:23",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -18794,7 +18794,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 23:47:39",
-    "classification": "personal",
+    "classification": "foodvloger",
     "product_count": "0"
   },
   {
@@ -19067,7 +19067,7 @@
     "average_shares": "17.12",
     "engagement_rate": "13.1295",
     "scraped_at": "2026-07-14 19:16:20",
-    "classification": "foodvloger",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -19340,7 +19340,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 23:36:54",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -19535,7 +19535,7 @@
     "average_shares": "2.43",
     "engagement_rate": "2.3862",
     "scraped_at": "2026-07-14 18:29:29",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -19574,7 +19574,7 @@
     "average_shares": "5.2",
     "engagement_rate": "3.9612",
     "scraped_at": "2026-07-14 18:55:53",
-    "classification": "foodvloger",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -19613,7 +19613,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 23:19:27",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -19652,7 +19652,7 @@
     "average_shares": "6.33",
     "engagement_rate": "11.4683",
     "scraped_at": "2026-07-14 17:33:09",
-    "classification": "personal",
+    "classification": "foodvloger",
     "product_count": "0"
   },
   {
@@ -19691,7 +19691,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-11 17:35:59",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -19808,7 +19808,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-13 14:27:53",
-    "classification": "personal",
+    "classification": "travel",
     "product_count": "0"
   },
   {
@@ -20120,7 +20120,7 @@
     "average_shares": "1.67",
     "engagement_rate": "2.4464",
     "scraped_at": "2026-07-14 17:31:46",
-    "classification": "foodvloger",
+    "classification": "travel",
     "product_count": "0"
   },
   {
@@ -20159,7 +20159,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 22:00:06",
-    "classification": "personal",
+    "classification": "lifestyle",
     "product_count": "0"
   },
   {
@@ -20237,7 +20237,7 @@
     "average_shares": "120.0",
     "engagement_rate": "67.6589",
     "scraped_at": "2026-07-14 19:37:23",
-    "classification": "foodvloger",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -20510,7 +20510,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 22:31:34",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -20627,7 +20627,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-11 17:45:37",
-    "classification": "personal",
+    "classification": "foodvloger",
     "product_count": "0"
   },
   {
@@ -20744,7 +20744,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-11 16:47:32",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -20822,7 +20822,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-15 00:31:30",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -20861,7 +20861,7 @@
     "average_shares": "",
     "engagement_rate": "1.4365",
     "scraped_at": "2026-07-14 19:24:11",
-    "classification": "foodvloger",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -20939,7 +20939,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 22:26:13",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -20978,7 +20978,7 @@
     "average_shares": "3.33",
     "engagement_rate": "5.8684",
     "scraped_at": "2026-07-14 18:30:28",
-    "classification": "foodvloger",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -21017,7 +21017,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 21:08:01",
-    "classification": "personal",
+    "classification": "lifestyle",
     "product_count": "0"
   },
   {
@@ -21056,7 +21056,7 @@
     "average_shares": "20.0",
     "engagement_rate": "4.5548",
     "scraped_at": "2026-07-14 19:55:34",
-    "classification": "foodvloger",
+    "classification": "travel",
     "product_count": "0"
   },
   {
@@ -21134,7 +21134,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 20:00:05",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -21290,7 +21290,7 @@
     "average_shares": "2.83",
     "engagement_rate": "1.0363",
     "scraped_at": "2026-07-14 23:59:12",
-    "classification": "foodvloger",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -21329,7 +21329,7 @@
     "average_shares": "1747.57",
     "engagement_rate": "741.7494",
     "scraped_at": "2026-07-14 18:03:58",
-    "classification": "travel",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -21407,7 +21407,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 23:37:54",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -21641,7 +21641,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-13 14:04:41",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -21758,7 +21758,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 23:53:51",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -21797,7 +21797,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 21:17:40",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -21914,7 +21914,7 @@
     "average_shares": "28.67",
     "engagement_rate": "2.4979",
     "scraped_at": "2026-07-14 18:51:26",
-    "classification": "lifestyle",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -21992,7 +21992,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-15 14:37:14",
-    "classification": "personal",
+    "classification": "travel",
     "product_count": "0"
   },
   {
@@ -22187,7 +22187,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 23:21:18",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -22226,7 +22226,7 @@
     "average_shares": "359.4",
     "engagement_rate": "604.9602",
     "scraped_at": "2026-07-14 18:02:28",
-    "classification": "foodvloger",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -22343,7 +22343,7 @@
     "average_shares": "7.43",
     "engagement_rate": "3.2662",
     "scraped_at": "2026-07-14 18:11:34",
-    "classification": "affiliate",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -22421,7 +22421,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 18:35:08",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -22460,7 +22460,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 21:40:19",
-    "classification": "personal",
+    "classification": "lifestyle",
     "product_count": "0"
   },
   {
@@ -22538,7 +22538,7 @@
     "average_shares": "18.75",
     "engagement_rate": "9.4775",
     "scraped_at": "2026-07-14 19:28:20",
-    "classification": "foodvloger",
+    "classification": "travel",
     "product_count": "0"
   },
   {
@@ -22772,7 +22772,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-11 16:37:18",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -22889,7 +22889,7 @@
     "average_shares": "5.0",
     "engagement_rate": "1.418",
     "scraped_at": "2026-07-14 19:29:32",
-    "classification": "foodvloger",
+    "classification": "travel",
     "product_count": "0"
   },
   {
@@ -22967,7 +22967,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-15 05:45:32",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -23006,7 +23006,7 @@
     "average_shares": "371.25",
     "engagement_rate": "163.0532",
     "scraped_at": "2026-07-14 18:05:35",
-    "classification": "foodvloger",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -23123,7 +23123,7 @@
     "average_shares": "1.5",
     "engagement_rate": "0.7136",
     "scraped_at": "2026-07-14 19:55:10",
-    "classification": "foodvloger",
+    "classification": "lifestyle",
     "product_count": "0"
   },
   {
@@ -23240,7 +23240,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-11 17:12:46",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -23318,7 +23318,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 22:37:17",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -23435,7 +23435,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 22:27:40",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -23513,7 +23513,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 17:54:18",
-    "classification": "personal",
+    "classification": "lifestyle",
     "product_count": "0"
   },
   {
@@ -23591,7 +23591,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-11 17:28:49",
-    "classification": "personal",
+    "classification": "foodvloger",
     "product_count": "0"
   },
   {
@@ -23669,7 +23669,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-11 16:33:31",
-    "classification": "personal",
+    "classification": "travel",
     "product_count": "0"
   },
   {
@@ -23747,7 +23747,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 22:45:48",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -23942,7 +23942,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 21:13:59",
-    "classification": "personal",
+    "classification": "foodvloger",
     "product_count": "0"
   },
   {
@@ -23981,7 +23981,7 @@
     "average_shares": "124.2",
     "engagement_rate": "47.1022",
     "scraped_at": "2026-07-14 18:50:41",
-    "classification": "foodvloger",
+    "classification": "travel",
     "product_count": "0"
   },
   {
@@ -24176,7 +24176,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 23:44:26",
-    "classification": "personal",
+    "classification": "lifestyle",
     "product_count": "0"
   },
   {
@@ -24254,7 +24254,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 21:18:33",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -24293,7 +24293,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 20:03:19",
-    "classification": "personal",
+    "classification": "lifestyle",
     "product_count": "0"
   },
   {
@@ -24332,7 +24332,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 21:20:30",
-    "classification": "personal",
+    "classification": "foodvloger",
     "product_count": "0"
   },
   {
@@ -24410,7 +24410,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-11 18:35:08",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -24488,7 +24488,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-13 14:21:12",
-    "classification": "personal",
+    "classification": "lifestyle",
     "product_count": "0"
   },
   {
@@ -24683,7 +24683,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 23:33:38",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -24800,7 +24800,7 @@
     "average_shares": "7.62",
     "engagement_rate": "8.4483",
     "scraped_at": "2026-07-14 18:43:28",
-    "classification": "foodvloger",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -24995,7 +24995,7 @@
     "average_shares": "67.71",
     "engagement_rate": "184.3505",
     "scraped_at": "2026-07-14 17:43:48",
-    "classification": "foodvloger",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -25034,7 +25034,7 @@
     "average_shares": "7559.5",
     "engagement_rate": "1444.692",
     "scraped_at": "2026-07-14 18:10:58",
-    "classification": "affiliate",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -25112,7 +25112,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 23:37:24",
-    "classification": "personal",
+    "classification": "lifestyle",
     "product_count": "0"
   },
   {
@@ -25151,7 +25151,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-13 13:53:46",
-    "classification": "personal",
+    "classification": "foodvloger",
     "product_count": "0"
   },
   {
@@ -25463,7 +25463,7 @@
     "average_shares": "4.0",
     "engagement_rate": "1.1512",
     "scraped_at": "2026-07-14 19:38:04",
-    "classification": "foodvloger",
+    "classification": "travel",
     "product_count": "0"
   },
   {
@@ -25502,7 +25502,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 23:25:19",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -25697,7 +25697,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 23:53:18",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -25736,7 +25736,7 @@
     "average_shares": "2.5",
     "engagement_rate": "3.8737",
     "scraped_at": "2026-07-14 19:14:45",
-    "classification": "foodvloger",
+    "classification": "travel",
     "product_count": "0"
   },
   {
@@ -25853,7 +25853,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-15 00:14:21",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -26321,7 +26321,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-11 18:24:08",
-    "classification": "personal",
+    "classification": "travel",
     "product_count": "0"
   },
   {
@@ -26594,7 +26594,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 21:02:39",
-    "classification": "personal",
+    "classification": "lifestyle",
     "product_count": "0"
   },
   {
@@ -26750,7 +26750,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-11 16:22:14",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -26789,7 +26789,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 21:11:25",
-    "classification": "personal",
+    "classification": "foodvloger",
     "product_count": "0"
   },
   {
@@ -26984,7 +26984,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-11 17:37:01",
-    "classification": "personal",
+    "classification": "travel",
     "product_count": "0"
   },
   {
@@ -27023,7 +27023,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 23:26:10",
-    "classification": "personal",
+    "classification": "lifestyle",
     "product_count": "0"
   },
   {
@@ -27062,7 +27062,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-11 18:11:26",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -27179,7 +27179,7 @@
     "average_shares": "1.33",
     "engagement_rate": "0.8033",
     "scraped_at": "2026-07-14 21:25:49",
-    "classification": "foodvloger",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -27413,7 +27413,7 @@
     "average_shares": "2.67",
     "engagement_rate": "1.3314",
     "scraped_at": "2026-07-14 19:44:27",
-    "classification": "foodvloger",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -27452,7 +27452,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 22:55:55",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -27491,7 +27491,7 @@
     "average_shares": "325710.0",
     "engagement_rate": "255955.3495",
     "scraped_at": "2026-07-14 21:12:47",
-    "classification": "foodvloger",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -27530,7 +27530,7 @@
     "average_shares": "1.0",
     "engagement_rate": "1.6429",
     "scraped_at": "2026-07-14 19:30:27",
-    "classification": "foodvloger",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -27725,7 +27725,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 22:06:17",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -27842,7 +27842,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 22:55:28",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -27881,7 +27881,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 20:46:11",
-    "classification": "personal",
+    "classification": "travel",
     "product_count": "0"
   },
   {
@@ -27920,7 +27920,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 22:53:24",
-    "classification": "personal",
+    "classification": "foodvloger",
     "product_count": "0"
   },
   {
@@ -28076,7 +28076,7 @@
     "average_shares": "2.86",
     "engagement_rate": "5.4167",
     "scraped_at": "2026-07-14 17:48:55",
-    "classification": "personal",
+    "classification": "travel",
     "product_count": "0"
   },
   {
@@ -28154,7 +28154,7 @@
     "average_shares": "9.0",
     "engagement_rate": "34.0",
     "scraped_at": "2026-07-14 20:39:30",
-    "classification": "foodvloger",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -28349,7 +28349,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 20:13:22",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -28388,7 +28388,7 @@
     "average_shares": "3.0",
     "engagement_rate": "7.6282",
     "scraped_at": "2026-07-14 19:58:24",
-    "classification": "foodvloger",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -28427,7 +28427,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 23:44:51",
-    "classification": "personal",
+    "classification": "foodvloger",
     "product_count": "0"
   },
   {
@@ -28466,7 +28466,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-11 17:43:30",
-    "classification": "personal",
+    "classification": "travel",
     "product_count": "0"
   },
   {
@@ -28505,7 +28505,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 22:50:24",
-    "classification": "personal",
+    "classification": "lifestyle",
     "product_count": "0"
   },
   {
@@ -28544,7 +28544,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 22:35:23",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -28583,7 +28583,7 @@
     "average_shares": "48.11",
     "engagement_rate": "41.377",
     "scraped_at": "2026-07-14 19:39:48",
-    "classification": "foodvloger",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -28700,7 +28700,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-11 17:09:11",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -28817,7 +28817,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 23:32:23",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -28934,7 +28934,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 23:57:06",
-    "classification": "personal",
+    "classification": "travel",
     "product_count": "0"
   },
   {
@@ -28973,7 +28973,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 21:05:44",
-    "classification": "personal",
+    "classification": "travel",
     "product_count": "0"
   },
   {
@@ -29012,7 +29012,7 @@
     "average_shares": "3.0",
     "engagement_rate": "22.1309",
     "scraped_at": "2026-07-14 18:52:57",
-    "classification": "foodvloger",
+    "classification": "travel",
     "product_count": "0"
   },
   {
@@ -29207,7 +29207,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-11 16:50:41",
-    "classification": "personal",
+    "classification": "travel",
     "product_count": "0"
   },
   {
@@ -29324,7 +29324,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-11 16:38:19",
-    "classification": "personal",
+    "classification": "travel",
     "product_count": "0"
   },
   {
@@ -29558,7 +29558,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 21:44:18",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -29597,7 +29597,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-11 17:47:19",
-    "classification": "personal",
+    "classification": "travel",
     "product_count": "0"
   },
   {
@@ -29636,7 +29636,7 @@
     "average_shares": "1.0",
     "engagement_rate": "0.1835",
     "scraped_at": "2026-07-14 21:48:08",
-    "classification": "personal",
+    "classification": "travel",
     "product_count": "0"
   },
   {
@@ -29675,7 +29675,7 @@
     "average_shares": "65.56",
     "engagement_rate": "104.2724",
     "scraped_at": "2026-07-14 18:22:34",
-    "classification": "travel",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -29714,7 +29714,7 @@
     "average_shares": "44.0",
     "engagement_rate": "41.6479",
     "scraped_at": "2026-07-15 00:08:58",
-    "classification": "foodvloger",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -29753,7 +29753,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 22:54:39",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -29792,7 +29792,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-11 17:33:55",
-    "classification": "personal",
+    "classification": "foodvloger",
     "product_count": "0"
   },
   {
@@ -29831,7 +29831,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 23:24:48",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -29948,7 +29948,7 @@
     "average_shares": "6.8",
     "engagement_rate": "36.0308",
     "scraped_at": "2026-07-14 18:44:31",
-    "classification": "foodvloger",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -30026,7 +30026,7 @@
     "average_shares": "460.0",
     "engagement_rate": "151.4894",
     "scraped_at": "2026-07-14 19:57:19",
-    "classification": "travel",
+    "classification": "foodvloger",
     "product_count": "0"
   },
   {
@@ -30182,7 +30182,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 22:33:49",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -30260,7 +30260,7 @@
     "average_shares": "854.17",
     "engagement_rate": "1597.86",
     "scraped_at": "2026-07-14 18:09:12",
-    "classification": "foodvloger",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -30299,7 +30299,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 21:53:32",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -30416,7 +30416,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 21:50:03",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -30455,7 +30455,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 20:12:48",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -30533,7 +30533,7 @@
     "average_shares": "5368.1",
     "engagement_rate": "9675.0106",
     "scraped_at": "2026-07-14 19:10:38",
-    "classification": "foodvloger",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -30611,7 +30611,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 20:16:47",
-    "classification": "personal",
+    "classification": "foodvloger",
     "product_count": "0"
   },
   {
@@ -30767,7 +30767,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 22:51:54",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -31001,7 +31001,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 23:35:26",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -31040,7 +31040,7 @@
     "average_shares": "6.4",
     "engagement_rate": "20.5085",
     "scraped_at": "2026-07-14 19:12:47",
-    "classification": "travel",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -31196,7 +31196,7 @@
     "average_shares": "",
     "engagement_rate": "1.4428",
     "scraped_at": "2026-07-14 19:17:55",
-    "classification": "affiliate",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -31391,7 +31391,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 23:17:40",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -31430,7 +31430,7 @@
     "average_shares": "26.4",
     "engagement_rate": "57.7249",
     "scraped_at": "2026-07-14 19:39:20",
-    "classification": "foodvloger",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -31469,7 +31469,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-11 17:22:08",
-    "classification": "personal",
+    "classification": "lifestyle",
     "product_count": "0"
   },
   {
@@ -31625,7 +31625,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 22:05:50",
-    "classification": "personal",
+    "classification": "foodvloger",
     "product_count": "0"
   },
   {
@@ -31664,7 +31664,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 20:54:23",
-    "classification": "personal",
+    "classification": "travel",
     "product_count": "0"
   },
   {
@@ -31937,7 +31937,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 23:11:10",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -32015,7 +32015,7 @@
     "average_shares": "",
     "engagement_rate": "0.2933",
     "scraped_at": "2026-07-14 23:17:13",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -32054,7 +32054,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-13 13:53:22",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -32210,7 +32210,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-15 00:24:18",
-    "classification": "personal",
+    "classification": "foodvloger",
     "product_count": "0"
   },
   {
@@ -32249,7 +32249,7 @@
     "average_shares": "9.22",
     "engagement_rate": "23.5185",
     "scraped_at": "2026-07-14 18:53:25",
-    "classification": "foodvloger",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -32405,7 +32405,7 @@
     "average_shares": "",
     "engagement_rate": "0.3257",
     "scraped_at": "2026-07-14 21:52:43",
-    "classification": "personal",
+    "classification": "foodvloger",
     "product_count": "0"
   },
   {
@@ -32483,7 +32483,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 23:45:46",
-    "classification": "personal",
+    "classification": "foodvloger",
     "product_count": "0"
   },
   {
@@ -32522,7 +32522,7 @@
     "average_shares": "10.14",
     "engagement_rate": "15.1486",
     "scraped_at": "2026-07-14 18:26:24",
-    "classification": "foodvloger",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -32678,7 +32678,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 18:41:46",
-    "classification": "personal",
+    "classification": "foodvloger",
     "product_count": "0"
   },
   {
@@ -32990,7 +32990,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-11 17:30:48",
-    "classification": "personal",
+    "classification": "foodvloger",
     "product_count": "0"
   },
   {
@@ -33029,7 +33029,7 @@
     "average_shares": "1.2",
     "engagement_rate": "5.9245",
     "scraped_at": "2026-07-15 00:06:10",
-    "classification": "foodvloger",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -33185,7 +33185,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-11 17:34:17",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -33224,7 +33224,7 @@
     "average_shares": "61.67",
     "engagement_rate": "84.0698",
     "scraped_at": "2026-07-14 17:39:15",
-    "classification": "travel",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -33419,7 +33419,7 @@
     "average_shares": "1.0",
     "engagement_rate": "1.5873",
     "scraped_at": "2026-07-14 19:42:26",
-    "classification": "travel",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -33497,7 +33497,7 @@
     "average_shares": "36.43",
     "engagement_rate": "45.5777",
     "scraped_at": "2026-07-14 19:02:18",
-    "classification": "affiliate",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -33731,7 +33731,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-11 18:12:09",
-    "classification": "personal",
+    "classification": "foodvloger",
     "product_count": "0"
   },
   {
@@ -33809,7 +33809,7 @@
     "average_shares": "4.67",
     "engagement_rate": "7.5758",
     "scraped_at": "2026-07-14 19:30:52",
-    "classification": "foodvloger",
+    "classification": "lifestyle",
     "product_count": "0"
   },
   {
@@ -34082,7 +34082,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-11 17:42:28",
-    "classification": "personal",
+    "classification": "travel",
     "product_count": "0"
   },
   {
@@ -34121,7 +34121,7 @@
     "average_shares": "8.8",
     "engagement_rate": "32.6047",
     "scraped_at": "2026-07-14 19:32:11",
-    "classification": "foodvloger",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -34199,7 +34199,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-15 00:26:45",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -34238,7 +34238,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 23:47:08",
-    "classification": "personal",
+    "classification": "foodvloger",
     "product_count": "0"
   },
   {
@@ -34277,7 +34277,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 20:30:50",
-    "classification": "personal",
+    "classification": "travel",
     "product_count": "0"
   },
   {
@@ -34316,7 +34316,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 21:52:14",
-    "classification": "personal",
+    "classification": "travel",
     "product_count": "0"
   },
   {
@@ -34550,7 +34550,7 @@
     "average_shares": "1.5",
     "engagement_rate": "4.9495",
     "scraped_at": "2026-07-14 19:28:44",
-    "classification": "foodvloger",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -34589,7 +34589,7 @@
     "average_shares": "2.0",
     "engagement_rate": "7.5127",
     "scraped_at": "2026-07-14 18:07:16",
-    "classification": "foodvloger",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -34979,7 +34979,7 @@
     "average_shares": "2.0",
     "engagement_rate": "14.3575",
     "scraped_at": "2026-07-14 17:36:26",
-    "classification": "foodvloger",
+    "classification": "travel",
     "product_count": "0"
   },
   {
@@ -35096,7 +35096,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-11 18:14:17",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -35135,7 +35135,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-11 17:47:40",
-    "classification": "personal",
+    "classification": "travel",
     "product_count": "0"
   },
   {
@@ -35603,7 +35603,7 @@
     "average_shares": "51.5",
     "engagement_rate": "102.5478",
     "scraped_at": "2026-07-14 18:49:51",
-    "classification": "foodvloger",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -35681,7 +35681,7 @@
     "average_shares": "3.25",
     "engagement_rate": "134.9351",
     "scraped_at": "2026-07-14 17:36:43",
-    "classification": "foodvloger",
+    "classification": "lifestyle",
     "product_count": "0"
   },
   {
@@ -35720,7 +35720,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-11 18:42:20",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -35837,7 +35837,7 @@
     "average_shares": "1.0",
     "engagement_rate": "9.9338",
     "scraped_at": "2026-07-14 19:49:25",
-    "classification": "travel",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -35915,7 +35915,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-15 00:13:51",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -35993,7 +35993,7 @@
     "average_shares": "52.62",
     "engagement_rate": "231.8966",
     "scraped_at": "2026-07-11 17:51:09",
-    "classification": "personal",
+    "classification": "travel",
     "product_count": "0"
   },
   {
@@ -36032,7 +36032,7 @@
     "average_shares": "3.0",
     "engagement_rate": "12.9167",
     "scraped_at": "2026-07-14 18:44:57",
-    "classification": "foodvloger",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -36227,7 +36227,7 @@
     "average_shares": "13.67",
     "engagement_rate": "237.8897",
     "scraped_at": "2026-07-14 19:23:04",
-    "classification": "foodvloger",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -36539,7 +36539,7 @@
     "average_shares": "28.8",
     "engagement_rate": "31.8296",
     "scraped_at": "2026-07-14 17:48:16",
-    "classification": "foodvloger",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -36734,7 +36734,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 23:10:10",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -36773,7 +36773,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 21:19:35",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -36890,7 +36890,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-15 00:33:25",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -37202,7 +37202,7 @@
     "average_shares": "7.0",
     "engagement_rate": "71.8095",
     "scraped_at": "2026-07-14 19:35:58",
-    "classification": "foodvloger",
+    "classification": "travel",
     "product_count": "0"
   },
   {
@@ -37436,7 +37436,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-11 17:54:05",
-    "classification": "personal",
+    "classification": "lifestyle",
     "product_count": "0"
   },
   {
@@ -37709,7 +37709,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-11 18:15:26",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -37865,7 +37865,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 23:50:22",
-    "classification": "personal",
+    "classification": "foodvloger",
     "product_count": "0"
   },
   {
@@ -38762,7 +38762,7 @@
     "average_shares": "13.0",
     "engagement_rate": "129.1667",
     "scraped_at": "2026-07-14 18:49:02",
-    "classification": "affiliate",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -38801,7 +38801,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 23:48:09",
-    "classification": "personal",
+    "classification": "lifestyle",
     "product_count": "0"
   },
   {
@@ -38996,7 +38996,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-11 17:26:01",
-    "classification": "personal",
+    "classification": "foodvloger",
     "product_count": "0"
   },
   {
@@ -39035,7 +39035,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 21:39:21",
-    "classification": "personal",
+    "classification": "foodvloger",
     "product_count": "0"
   },
   {
@@ -39347,7 +39347,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 22:07:39",
-    "classification": "personal",
+    "classification": "foodvloger",
     "product_count": "0"
   },
   {
@@ -39542,7 +39542,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-11 18:42:00",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -39776,7 +39776,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 20:12:13",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -40049,7 +40049,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-11 17:42:48",
-    "classification": "personal",
+    "classification": "travel",
     "product_count": "0"
   },
   {
@@ -40361,7 +40361,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-11 18:40:17",
-    "classification": "personal",
+    "classification": "foodvloger",
     "product_count": "0"
   },
   {
@@ -40439,7 +40439,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-11 18:14:59",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -40556,7 +40556,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 23:45:19",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -40595,7 +40595,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-11 17:41:49",
-    "classification": "personal",
+    "classification": "travel",
     "product_count": "0"
   },
   {
@@ -40673,7 +40673,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 22:49:06",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -40907,7 +40907,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-11 17:30:08",
-    "classification": "personal",
+    "classification": "foodvloger",
     "product_count": "0"
   },
   {
@@ -40985,7 +40985,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 18:34:02",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -41024,7 +41024,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 21:46:47",
-    "classification": "personal",
+    "classification": "foodvloger",
     "product_count": "0"
   },
   {
@@ -41141,7 +41141,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-11 17:57:02",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -41219,7 +41219,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-11 17:31:56",
-    "classification": "personal",
+    "classification": "foodvloger",
     "product_count": "0"
   },
   {
@@ -41297,7 +41297,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 23:51:21",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -41375,7 +41375,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-11 17:34:57",
-    "classification": "personal",
+    "classification": "foodvloger",
     "product_count": "0"
   },
   {
@@ -41492,7 +41492,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 20:17:58",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -41531,7 +41531,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-11 17:40:29",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -42350,7 +42350,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-11 16:34:13",
-    "classification": "personal",
+    "classification": "foodvloger",
     "product_count": "0"
   },
   {
@@ -42428,7 +42428,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-11 18:42:41",
-    "classification": "personal",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -42701,7 +42701,7 @@
     "average_shares": "9.5",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 17:31:17",
-    "classification": "foodvloger",
+    "classification": "lifestyle",
     "product_count": "0"
   },
   {
@@ -42818,7 +42818,7 @@
     "average_shares": "21.4",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 17:45:11",
-    "classification": "foodvloger",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -42857,7 +42857,7 @@
     "average_shares": "",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 17:45:57",
-    "classification": "foodvloger",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -42896,7 +42896,7 @@
     "average_shares": "16.75",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 17:46:55",
-    "classification": "foodvloger",
+    "classification": "travel",
     "product_count": "0"
   },
   {
@@ -42935,7 +42935,7 @@
     "average_shares": "1.0",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 17:47:13",
-    "classification": "foodvloger",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -42974,7 +42974,7 @@
     "average_shares": "6.5",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 17:49:09",
-    "classification": "foodvloger",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -43091,7 +43091,7 @@
     "average_shares": "13.33",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 18:07:30",
-    "classification": "affiliate",
+    "classification": "foodvloger",
     "product_count": "0"
   },
   {
@@ -43130,7 +43130,7 @@
     "average_shares": "1.67",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 18:08:43",
-    "classification": "foodvloger",
+    "classification": "affiliate",
     "product_count": "0"
   },
   {
@@ -43169,7 +43169,7 @@
     "average_shares": "2.83",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 18:10:24",
-    "classification": "foodvloger",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -43247,7 +43247,7 @@
     "average_shares": "28.38",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 18:28:56",
-    "classification": "affiliate",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -43325,7 +43325,7 @@
     "average_shares": "33.44",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 18:54:39",
-    "classification": "foodvloger",
+    "classification": "travel",
     "product_count": "0"
   },
   {
@@ -43364,7 +43364,7 @@
     "average_shares": "193.29",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 18:54:55",
-    "classification": "foodvloger",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -43403,7 +43403,7 @@
     "average_shares": "55.0",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 19:02:43",
-    "classification": "foodvloger",
+    "classification": "travel",
     "product_count": "0"
   },
   {
@@ -43442,7 +43442,7 @@
     "average_shares": "17.33",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 19:13:10",
-    "classification": "lifestyle",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -43481,7 +43481,7 @@
     "average_shares": "63.6",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 19:15:29",
-    "classification": "lifestyle",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -43520,7 +43520,7 @@
     "average_shares": "5.67",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 19:36:19",
-    "classification": "foodvloger",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -43559,7 +43559,7 @@
     "average_shares": "1.56",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 19:37:45",
-    "classification": "foodvloger",
+    "classification": "personal",
     "product_count": "0"
   },
   {
@@ -43598,7 +43598,7 @@
     "average_shares": "1.25",
     "engagement_rate": "",
     "scraped_at": "2026-07-14 19:55:47",
-    "classification": "foodvloger",
+    "classification": "personal",
     "product_count": "0"
   }
 ]

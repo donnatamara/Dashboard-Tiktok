@@ -160,7 +160,6 @@ export default function AccountTable({ accounts }: Props) {
               <th style={thStyleSortable} onClick={() => toggleSort('video_count')}>Video{sortIcon('video_count')}</th>
               <th style={thStyleSortable} onClick={() => toggleSort('average_views')}>Rata View{sortIcon('average_views')}</th>
               <th style={thStyleSortable} onClick={() => toggleSort('engagement_rate')}>ER{sortIcon('engagement_rate')}</th>
-              <th style={thStyle}>Produk</th>
               <th style={thStyle}>Shop</th>
               <th style={thStyle}>Monetisasi</th>
               <th style={thStyle}>Bisnis</th>
@@ -226,13 +225,6 @@ export default function AccountTable({ accounts }: Props) {
                     <span style={{ color: COLORS.textMuted, fontSize: 11 }}>—</span>
                   )}
                 </td>
-                <td style={{ ...tdStyle, textAlign: 'center', fontWeight: 600 } as React.CSSProperties}>
-                  {acc.product_count && acc.product_count !== "0" ? (
-                    <span style={{ color: '#059669', fontSize: 13 }}>{acc.product_count}</span>
-                  ) : (
-                    <span style={{ color: COLORS.textMuted, fontSize: 11 }}>—</span>
-                  )}
-                </td>
                 <td style={{ ...tdStyle, textAlign: 'center' } as React.CSSProperties}>
                   {acc.has_tiktok_shop === '1' ? badge('Ya', '#059669', '#ECFDF5') : badge('Tidak', '#6b6b6b', 'rgba(107,107,107,0.063)')}
                 </td>
@@ -258,7 +250,7 @@ export default function AccountTable({ accounts }: Props) {
             ))}
             {pageData.length === 0 && (
               <tr>
-                <td colSpan={14} style={{ textAlign: 'center', padding: 40, color: COLORS.textMuted }}>
+                <td colSpan={13} style={{ textAlign: 'center', padding: 40, color: COLORS.textMuted }}>
                   <div style={{ marginBottom: 8, opacity: 0.5 }}><SearchIcon size={32} color={COLORS.textMuted} /></div>
                   <div style={{ fontWeight: 600, marginBottom: 4 }}>Tidak ada akun ditemukan</div>
                   <div style={{ fontSize: 12 }}>Coba ubah filter atau kata kunci pencarian</div>

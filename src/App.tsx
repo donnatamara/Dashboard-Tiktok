@@ -2,6 +2,7 @@ import { useMemo } from 'react';
 import data from './data.json';
 import type { Account } from './types';
 import AccountTable from './components/AccountTable';
+import COLORS from './colors';
 import './App.css';
 import './responsive.css';
 
@@ -21,8 +22,8 @@ export default function App() {
   const foodvlogerCount = accounts.filter(a => a.classification === 'foodvloger').length;
 
   return (
-    <div style={{ minHeight: '100vh', background: '#fffdf7', color: '#2d2d2d', fontFamily: 'Inter, Segoe UI, system-ui, sans-serif' }}>
-      <header style={{ background: 'linear-gradient(135deg, #d49545 0%, #ebb773 100%)', padding: '32px 24px', color: '#fff', boxShadow: 'rgba(235,183,115,0.3) 0px 4px 20px' }}>
+    <div style={{ minHeight: '100vh', background: COLORS.bg, color: COLORS.text, fontFamily: 'Inter, Segoe UI, system-ui, sans-serif' }}>
+      <header style={{ background: `linear-gradient(135deg, ${COLORS.primaryDark} 0%, ${COLORS.gold} 100%)`, padding: '32px 24px', color: '#fff', boxShadow: `${COLORS.primary}33 0px 4px 20px` }}>
         <div style={{ maxWidth: 1400, margin: '0 auto', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
             <svg viewBox="0 0 100 100" width="36" height="36" xmlns="http://www.w3.org/2000/svg"><path d="M72.8 19.2c-3.5-4.1-5.6-9.3-5.8-14.8h-3.2l-.1.1V43c0 6.6-5.4 12-12 12s-12-5.4-12-12 5.4-12 12-12c1.2 0 2.3.2 3.4.5v-3.3c-1.1-.2-2.3-.3-3.4-.3-8.6 0-15.5 6.9-15.5 15.5s6.9 15.5 15.5 15.5c7.7 0 14.1-5.6 15.3-12.9l.2-38.2c.1 0 .1 0 .2.1 2.3.6 4.5 1.6 6.4 3.1 0 0 0 0 .1.1 2.3 1.7 4.3 3.9 5.7 6.5h.1z" fill="white" fill-rule="evenodd"></path></svg>
@@ -32,7 +33,7 @@ export default function App() {
             </div>
           </div>
           <div style={{ textAlign: 'right' }}>
-            <div style={{ fontSize: 12, color: '#6b6b6b' }}>Data TikTok · {new Date().toLocaleDateString('id-ID', { day: 'numeric', month: 'numeric', year: 'numeric' })}</div>
+            <div style={{ fontSize: 12, color: COLORS.textSecondary }}>Data TikTok · {new Date().toLocaleDateString('id-ID', { day: 'numeric', month: 'numeric', year: 'numeric' })}</div>
             <div style={{ fontSize: 11, opacity: 0.6, marginTop: 2 }}>{totalScraped} akun terkumpul</div>
           </div>
         </div>
@@ -40,34 +41,34 @@ export default function App() {
 
       <main style={{ maxWidth: 1400, margin: '0 auto', padding: '0 24px' }}>
         {/* Stats row - overlapping the header */}
-        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 0, margin: '-20px auto 28px', background: '#fff', borderRadius: 16, boxShadow: 'rgba(0,0,0,0.06) 0px 4px 24px', padding: '22px 0', maxWidth: 800 }}>
+        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 0, margin: '-20px auto 28px', background: COLORS.white, borderRadius: 16, boxShadow: `${COLORS.shadow} 0px 4px 24px`, padding: '22px 0', maxWidth: 800 }}>
           <StatItem value={totalScraped} label="Total Akun" />
-          <div style={{ width: 1, height: 40, background: '#F0E6D6' }} />
+          <div style={{ width: 1, height: 40, background: COLORS.border }} />
           <StatItem value={formatNum(totalFollowers)} label="Total Followers" />
-          <div style={{ width: 1, height: 40, background: '#F0E6D6' }} />
+          <div style={{ width: 1, height: 40, background: COLORS.border }} />
           <StatItem value={withLocation} label="Lokasi Terdeteksi" />
-          <div style={{ width: 1, height: 40, background: '#F0E6D6' }} />
+          <div style={{ width: 1, height: 40, background: COLORS.border }} />
           <StatItem value={monetized} label="Monetisasi" />
-          <div style={{ width: 1, height: 40, background: '#F0E6D6' }} />
+          <div style={{ width: 1, height: 40, background: COLORS.border }} />
           <StatItem value={withShop} label="TikTok Shop" />
         </div>
 
         {/* Summary cards grid — no overlap with stats row above */}
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(7, 1fr)', gap: 16, marginBottom: 28 }}>
-          <SummaryCard value={formatNum(totalLikes)} label="Total Likes" sub={`${accounts.filter(a => parseInt(a.total_likes) > 0).length} akun dengan like`} />
-          <SummaryCard value={formatNum(totalVideos)} label="Total Video" sub={`${Math.round(totalVideos / Math.max(1, totalScraped))} video/akun`} />
-          <SummaryCard value={formatNum(avgViews)} label="Rata-rata Views" sub="per video" />
-          <SummaryCard value={avgER.toFixed(2) + '%'} label="Rata-rata ER" sub={`${accounts.filter(a => parseFloat(a.engagement_rate) > 0).length} akun terhitung`} />
-          <SummaryCard value={verified} label="Terverifikasi" sub={`${((verified/totalScraped)*100).toFixed(1)}% dari total`} />
-          <SummaryCard value={affiliateCount} label="Affiliate" sub={`${((affiliateCount/totalScraped)*100).toFixed(1)}% dari total`} />
-          <SummaryCard value={foodvlogerCount} label="Foodvloger" sub={`${((foodvlogerCount/totalScraped)*100).toFixed(1)}% dari total`} />
+          <SummaryCard value={formatNum(totalLikes)} label="Total Likes" sub={`${accounts.filter(a => parseInt(a.total_likes) > 0).length} akun dengan like`} accent={COLORS.primary} />
+          <SummaryCard value={formatNum(totalVideos)} label="Total Video" sub={`${Math.round(totalVideos / Math.max(1, totalScraped))} video/akun`} accent={COLORS.gold} />
+          <SummaryCard value={formatNum(avgViews)} label="Rata-rata Views" sub="per video" accent={COLORS.primary} />
+          <SummaryCard value={avgER.toFixed(2) + '%'} label="Rata-rata ER" sub={`${accounts.filter(a => parseFloat(a.engagement_rate) > 0).length} akun terhitung`} accent={COLORS.gold} />
+          <SummaryCard value={verified} label="Terverifikasi" sub={`${((verified/totalScraped)*100).toFixed(1)}% dari total`} accent={COLORS.primary} />
+          <SummaryCard value={affiliateCount} label="Affiliate" sub={`${((affiliateCount/totalScraped)*100).toFixed(1)}% dari total`} accent={COLORS.gold} />
+          <SummaryCard value={foodvlogerCount} label="Foodvloger" sub={`${((foodvlogerCount/totalScraped)*100).toFixed(1)}% dari total`} accent={COLORS.primary} />
         </div>
 
         <AccountTable accounts={accounts} />
       </main>
 
-      <footer style={{ textAlign: 'center', padding: 24, marginTop: 40, fontSize: 12, color: '#6b6b6b' }}>
-        SIPEKA · Data diperbarui {new Date().toLocaleDateString('id-ID', { day: 'numeric', month: 'numeric', year: 'numeric' })} · <a href="#root" style={{ color: '#d49545', fontWeight: 600, textDecoration: 'none' }}>Kembali ke atas</a>
+      <footer style={{ textAlign: 'center', padding: 24, marginTop: 40, fontSize: 12, color: COLORS.textSecondary }}>
+        SIPEKA · Data diperbarui {new Date().toLocaleDateString('id-ID', { day: 'numeric', month: 'numeric', year: 'numeric' })} · <a href="#root" style={{ color: COLORS.primary, fontWeight: 600, textDecoration: 'none' }}>Kembali ke atas</a>
       </footer>
     </div>
   );
@@ -82,18 +83,18 @@ function formatNum(n: number): string {
 function StatItem({ value, label }: { value: string | number; label: string }) {
   return (
     <div style={{ flex: 1, textAlign: 'center' }}>
-      <div style={{ fontSize: 32, fontWeight: 700, color: '#d49545' }}>{value}</div>
-      <div style={{ fontSize: 11, color: '#6b6b6b', textTransform: 'uppercase', letterSpacing: '0.5px', marginTop: 4 }}>{label}</div>
+      <div style={{ fontSize: 32, fontWeight: 700, color: COLORS.primary }}>{value}</div>
+      <div style={{ fontSize: 11, color: COLORS.textSecondary, textTransform: 'uppercase', letterSpacing: '0.5px', marginTop: 4 }}>{label}</div>
     </div>
   );
 }
 
-function SummaryCard({ value, label, sub }: { value: string | number; label: string; sub: string }) {
+function SummaryCard({ value, label, sub, accent }: { value: string | number; label: string; sub: string; accent?: string }) {
   return (
-    <div style={{ background: '#fff', borderRadius: 12, padding: '18px 16px', boxShadow: '0 1px 2px rgba(0,0,0,0.04)' }}>
-      <div style={{ fontSize: 24, fontWeight: 700, color: '#d49545', lineHeight: 1.2 }}>{value}</div>
-      <div style={{ fontSize: 12, color: '#6b6b6b', fontWeight: 600, marginTop: 4 }}>{label}</div>
-      <div style={{ fontSize: 11, color: '#a0a0a0', marginTop: 4 }}>{sub}</div>
+    <div style={{ background: COLORS.cardBg, borderRadius: 12, padding: '18px 16px', boxShadow: `0 1px 2px ${COLORS.shadow}` }}>
+      <div style={{ fontSize: 24, fontWeight: 700, color: accent || COLORS.primary, lineHeight: 1.2 }}>{value}</div>
+      <div style={{ fontSize: 12, color: COLORS.textSecondary, fontWeight: 600, marginTop: 4 }}>{label}</div>
+      <div style={{ fontSize: 11, color: COLORS.textMuted, marginTop: 4 }}>{sub}</div>
     </div>
   );
 }

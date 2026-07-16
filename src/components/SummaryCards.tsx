@@ -20,7 +20,7 @@ export default function SummaryCards({ accounts, totalScraped }: Props) {
   const withFollowers = accounts.filter(a => parseInt(a.followers) > 0).length;
 
   const cards = [
-    { Icon: UsersIcon, label: 'Total Akun', value: totalScraped, sub: `${accounts.length} data terkumpul`, color: COLORS.orangeDarker, bg: COLORS.orangeLight },
+    { Icon: UsersIcon, label: 'Total Akun', value: totalScraped, sub: `${accounts.length} data terkumpul`, color: COLORS.primaryDarker, bg: COLORS.primaryLight },
     { Icon: HeartIcon, label: 'Total Followers', value: formatNum(totalFollowers), sub: `${withFollowers} akun punya follower`, color: '#DC2626', bg: '#FEF2F2' },
     { Icon: PinIcon, label: 'Lokasi Terdeteksi', value: withLocation, sub: `${((withLocation/totalScraped)*100).toFixed(0)}% dari total`, color: COLORS.blue, bg: COLORS.blueLight },
     { Icon: BriefcaseIcon, label: 'Monetisasi', value: monetized, sub: `${((monetized/totalScraped)*100).toFixed(0)}% indikasi`, color: COLORS.purple, bg: COLORS.purpleLight },

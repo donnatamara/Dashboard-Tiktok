@@ -150,7 +150,7 @@ export default function AccountTable({ accounts }: Props) {
         {hasFilters && (
           <button onClick={resetFilters} style={resetBtnStyle}>
             <span style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
-              <CrossIcon size={12} color={COLORS.orangeDarker} /> Reset
+              <CrossIcon size={12} color={COLORS.primaryDarker} /> Reset
             </span>
           </button>
         )}
@@ -185,11 +185,11 @@ export default function AccountTable({ accounts }: Props) {
                         src={acc.avatar_url}
                         alt=""
                         style={{ width: 36, height: 36, borderRadius: '50%', objectFit: 'cover', background: COLORS.borderLight, flexShrink: 0 }}
-                        onError={e => { (e.target as HTMLImageElement).src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M72.8 19.2c-3.5-4.1-5.6-9.3-5.8-14.8h-3.2l-.1.1V43c0 6.6-5.4 12-12 12s-12-5.4-12-12 5.4-12 12-12c1.2 0 2.3.2 3.4.5v-3.3c-1.1-.2-2.3-.3-3.4-.3-8.6 0-15.5 6.9-15.5 15.5s6.9 15.5 15.5 15.5c7.7 0 14.1-5.6 15.3-12.9l.2-38.2c.1 0 .1 0 .2.1 2.3.6 4.5 1.6 6.4 3.1 0 0 0 0 .1.1 2.3 1.7 4.3 3.9 5.7 6.5h.1z' fill='%23EBB773' fill-rule='evenodd'/%3E%3C/svg%3E"; }}
+                        onError={e => { (e.target as HTMLImageElement).src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M72.8 19.2c-3.5-4.1-5.6-9.3-5.8-14.8h-3.2l-.1.1V43c0 6.6-5.4 12-12 12s-12-5.4-12-12 5.4-12 12-12c1.2 0 2.3.2 3.4.5v-3.3c-1.1-.2-2.3-.3-3.4-.3-8.6 0-15.5 6.9-15.5 15.5s6.9 15.5 15.5 15.5c7.7 0 14.1-5.6 15.3-12.9l.2-38.2c.1 0 .1 0 .2.1 2.3.6 4.5 1.6 6.4 3.1 0 0 0 0 .1.1 2.3 1.7 4.3 3.9 5.7 6.5h.1z' fill='%23E17055' fill-rule='evenodd'/%3E%3C/svg%3E"; }}
                       />
                     ) : (
-                      <div style={{ width: 36, height: 36, borderRadius: '50%', background: COLORS.orangeLight, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-                        <TikTokIcon size={20} color={COLORS.orangeDark} />
+                      <div style={{ width: 36, height: 36, borderRadius: '50%', background: COLORS.primaryLight, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                        <TikTokIcon size={20} color={COLORS.primaryDark} />
                       </div>
                     )}
                     <div>
@@ -226,7 +226,7 @@ export default function AccountTable({ accounts }: Props) {
                 <td style={tdStyle}>{fmt(acc.average_views)}</td>
                 <td style={tdStyle}>
                   {acc.engagement_rate ? (
-                    <span style={{ color: COLORS.orangeDarker, fontWeight: 700, fontSize: 13 }}>
+                    <span style={{ color: COLORS.primaryDarker, fontWeight: 700, fontSize: 13 }}>
                       {parseFloat(acc.engagement_rate).toFixed(2)}%
                     </span>
                   ) : (
@@ -242,7 +242,7 @@ export default function AccountTable({ accounts }: Props) {
                 <td style={tdStyle}>
                   <div style={{ fontSize: 11, lineHeight: 1.8, display: 'flex', flexDirection: 'column', gap: 2 }}>
                     {acc.email && <ContactChip icon={MailIcon} text={acc.email} />}
-                    {acc.website && <ContactChip icon={GlobeIcon} text={<a href={acc.website} target="_blank" style={{ color: COLORS.orangeDark, fontWeight: 600 }}>Website</a>} />}
+                    {acc.website && <ContactChip icon={GlobeIcon} text={<a href={acc.website} target="_blank" style={{ color: COLORS.primaryDark, fontWeight: 600 }}>Website</a>} />}
                     {acc.instagram && <ContactChip icon={InstagramIcon} text={`@${acc.instagram}`} />}
                     {acc.whatsapp && <ContactChip icon={MessageIcon} text={acc.whatsapp} />}
                     {acc.facebook && <ContactChip icon={FacebookIcon} text={acc.facebook} />}
@@ -339,22 +339,22 @@ function badge(text: string, color: string, bg: string) {
 const searchInputStyle: React.CSSProperties = {
   flex: '1 1 220px',
   padding: '8px 12px',
-  border: '1px solid #E5E0D6',
+  border: `1px solid ${COLORS.border}`,
   borderRadius: 8,
   fontSize: 13,
   outline: 'none',
-  background: '#fff',
-  color: '#2d2d2d',
+  background: COLORS.white,
+  color: COLORS.text,
 };
 
 const selectStyle: React.CSSProperties = {
   padding: '8px 12px',
-  border: '1px solid #E5E0D6',
+  border: `1px solid ${COLORS.border}`,
   borderRadius: 8,
   fontSize: 13,
-  background: '#fff',
+  background: COLORS.white,
   outline: 'none',
-  color: '#2d2d2d',
+  color: COLORS.text,
   cursor: 'pointer',
   minWidth: 140,
 };
@@ -369,10 +369,10 @@ const countStyle: React.CSSProperties = {
 
 const resetBtnStyle: React.CSSProperties = {
   padding: '6px 12px',
-  border: '1px solid #d49545',
+  border: `1px solid ${COLORS.primary}`,
   borderRadius: 8,
-  background: '#fff3e0',
-  color: '#d49545',
+  background: COLORS.primaryLight,
+  color: COLORS.primary,
   fontSize: 12,
   fontWeight: 600,
   cursor: 'pointer',
@@ -388,14 +388,14 @@ const tableStyle: React.CSSProperties = {
 const thStyle: React.CSSProperties = {
   textAlign: 'left',
   padding: '10px 12px',
-  borderBottom: '1px solid #E5E0D6',
-  color: '#6b6b6b',
+  borderBottom: `1px solid ${COLORS.border}`,
+  color: COLORS.textSecondary,
   fontSize: 11,
   fontWeight: 700,
   textTransform: 'uppercase',
   whiteSpace: 'nowrap',
   letterSpacing: '0.4px',
-  background: '#fff',
+  background: COLORS.white,
   position: 'sticky',
   top: 0,
   userSelect: 'none',
@@ -413,8 +413,8 @@ const thStyleSortable: React.CSSProperties = {
 };
 
 const trStyle = (): React.CSSProperties => ({
-  borderBottom: '1px solid #F0EDE8',
-  background: '#fff',
+  borderBottom: `1px solid ${COLORS.borderLight}`,
+  background: COLORS.white,
 });
 
 const tdStyle: React.CSSProperties = {
@@ -431,7 +431,7 @@ const tdNumStyle: React.CSSProperties = {
 };
 
 const linkStyle: React.CSSProperties = {
-  color: COLORS.orangeDarker,
+  color: COLORS.primaryDarker,
   fontWeight: 600,
   textDecoration: 'none',
   fontSize: 13,
@@ -444,8 +444,8 @@ const verifiedBadge: React.CSSProperties = {
 };
 
 const locBadgeStyle: React.CSSProperties = {
-  background: COLORS.orangeLight,
-  color: COLORS.orangeDarker,
+  background: COLORS.primaryLight,
+  color: COLORS.primaryDarker,
   fontSize: 12,
   fontWeight: 600,
   padding: '2px 8px',
@@ -477,10 +477,10 @@ function classBadgeStyle(cls: string): React.CSSProperties {
 
 const pageBtnStyle: React.CSSProperties = {
   padding: '6px 10px',
-  border: '1px solid #E5E0D6',
+  border: `1px solid ${COLORS.border}`,
   borderRadius: 6,
-  background: '#fff',
-  color: '#6b6b6b',
+  background: COLORS.white,
+  color: COLORS.textSecondary,
   fontSize: 12,
   fontWeight: 500,
   cursor: 'pointer',
@@ -490,8 +490,8 @@ const pageBtnStyle: React.CSSProperties = {
 
 const pageBtnActiveStyle: React.CSSProperties = {
   ...pageBtnStyle,
-  background: '#d49545',
+  background: COLORS.primary,
   color: '#fff',
-  borderColor: '#d49545',
+  borderColor: COLORS.primary,
   fontWeight: 600,
 };

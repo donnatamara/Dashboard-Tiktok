@@ -16,11 +16,9 @@ export default function App() {
   const totalVideos = accounts.reduce((s, a) => s + (parseInt(a.video_count) || 0), 0);
   const avgViews = Math.round(accounts.reduce((s, a) => s + (parseInt(a.average_views) || 0), 0) / Math.max(1, accounts.filter(a => parseInt(a.average_views) > 0).length));
   const avgER = accounts.reduce((s, a) => s + (parseFloat(a.engagement_rate) || 0), 0) / Math.max(1, accounts.filter(a => parseFloat(a.engagement_rate) > 0).length);
-  const business = accounts.filter(a => a.business_account === '1').length;
   const verified = accounts.filter(a => a.verified === '1').length;
-  const withEmail = accounts.filter(a => a.email).length;
-  const withInstagram = accounts.filter(a => a.instagram).length;
-  const withWhatsapp = accounts.filter(a => a.whatsapp).length;
+  const affiliateCount = accounts.filter(a => a.classification === 'affiliate').length;
+  const foodvlogerCount = accounts.filter(a => a.classification === 'foodvloger').length;
 
   return (
     <div style={{ minHeight: '100vh', background: '#fffdf7', color: '#2d2d2d', fontFamily: 'Inter, Segoe UI, system-ui, sans-serif' }}>
@@ -61,8 +59,8 @@ export default function App() {
           <SummaryCard value={formatNum(avgViews)} label="Rata-rata Views" sub="per video" />
           <SummaryCard value={avgER.toFixed(2) + '%'} label="Rata-rata ER" sub={`${accounts.filter(a => parseFloat(a.engagement_rate) > 0).length} akun terhitung`} />
           <SummaryCard value={verified} label="Terverifikasi" sub={`${((verified/totalScraped)*100).toFixed(1)}% dari total`} />
-          <SummaryCard value={business} label="Akun Bisnis" sub={`${((business/totalScraped)*100).toFixed(0)}% dari total`} />
-          <SummaryCard value={withEmail} label="Email Publik" sub={`${withInstagram} IG, ${withWhatsapp} WA`} />
+          <SummaryCard value={affiliateCount} label="Affiliate" sub={`${((affiliateCount/totalScraped)*100).toFixed(1)}% dari total`} />
+          <SummaryCard value={foodvlogerCount} label="Foodvloger" sub={`${((foodvlogerCount/totalScraped)*100).toFixed(1)}% dari total`} />
         </div>
 
         <AccountTable accounts={accounts} />

@@ -22,10 +22,19 @@ export default function AccountTable({ accounts }: Props) {
   const [page, setPage] = useState(0);
   const perPage = 25;
 
+  const allLocations = [
+    "Ajibarang", "Banyumas", "Baturraden", "Cilongok", "Gumelar",
+    "Jatilawang", "Kalibagor", "Karanglewas", "Kebasen",
+    "Kedungbanteng", "Kembaran", "Kemranjen", "Lumbir",
+    "Patikraja", "Pekuncen", "Purwojati",
+    "Purwokerto Barat", "Purwokerto Selatan", "Purwokerto Timur", "Purwokerto Utara",
+    "Rawalo", "Sokaraja", "Somagede", "Sumbang", "Sumpiuh", "Tambak", "Wangon",
+  ];
   const locations = useMemo(() => {
-    const set = new Set<string>();
+    // Include Banyumas as well (remapped from Purwokerto/Pwt)
+    const set = new Set(allLocations);
     accounts.forEach(a => {
-      if (a.location_detected && a.location_detected !== 'Purwokerto') set.add(a.location_detected);
+      if (a.location_detected) set.add(a.location_detected);
     });
     return Array.from(set).sort();
   }, [accounts]);
@@ -162,7 +171,6 @@ export default function AccountTable({ accounts }: Props) {
               <th style={thStyleSortable} onClick={() => toggleSort('engagement_rate')}>ER{sortIcon('engagement_rate')}</th>
               <th style={thStyle}>Shop</th>
               <th style={thStyle}>Monetisasi</th>
-              <th style={thStyle}>Bisnis</th>
               <th style={thStyle}>Kontak</th>
             </tr>
           </thead>
@@ -231,9 +239,6 @@ export default function AccountTable({ accounts }: Props) {
                 <td style={{ ...tdStyle, textAlign: 'center' } as React.CSSProperties}>
                   {acc.monetization === '1' ? badge('Ya', '#059669', '#ECFDF5') : badge('Tidak', '#6b6b6b', 'rgba(107,107,107,0.063)')}
                 </td>
-                <td style={{ ...tdStyle, textAlign: 'center' } as React.CSSProperties}>
-                  {acc.business_account === '1' ? badge('Ya', '#2563EB', '#EFF6FF') : badge('Tidak', '#6b6b6b', 'rgba(107,107,107,0.063)')}
-                </td>
                 <td style={tdStyle}>
                   <div style={{ fontSize: 11, lineHeight: 1.8, display: 'flex', flexDirection: 'column', gap: 2 }}>
                     {acc.email && <ContactChip icon={MailIcon} text={acc.email} />}
@@ -250,7 +255,7 @@ export default function AccountTable({ accounts }: Props) {
             ))}
             {pageData.length === 0 && (
               <tr>
-                <td colSpan={13} style={{ textAlign: 'center', padding: 40, color: COLORS.textMuted }}>
+                <td colSpan={12} style={{ textAlign: 'center', padding: 40, color: COLORS.textMuted }}>
                   <div style={{ marginBottom: 8, opacity: 0.5 }}><SearchIcon size={32} color={COLORS.textMuted} /></div>
                   <div style={{ fontWeight: 600, marginBottom: 4 }}>Tidak ada akun ditemukan</div>
                   <div style={{ fontSize: 12 }}>Coba ubah filter atau kata kunci pencarian</div>

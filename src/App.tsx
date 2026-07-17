@@ -2,6 +2,7 @@ import { useMemo } from 'react';
 import data from './data.json';
 import type { Account } from './types';
 import AccountTable from './components/AccountTable';
+import Logo from './components/Logo';
 import COLORS from './colors';
 import './App.css';
 import './responsive.css';
@@ -26,7 +27,7 @@ export default function App() {
       <header style={{ background: `linear-gradient(135deg, ${COLORS.primaryDark} 0%, ${COLORS.gold} 100%)`, padding: '32px 24px', color: '#fff', boxShadow: `${COLORS.primary}33 0px 4px 20px` }}>
         <div style={{ maxWidth: 1400, margin: '0 auto', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
-            <svg viewBox="0 0 100 100" width="36" height="36" xmlns="http://www.w3.org/2000/svg"><path d="M72.8 19.2c-3.5-4.1-5.6-9.3-5.8-14.8h-3.2l-.1.1V43c0 6.6-5.4 12-12 12s-12-5.4-12-12 5.4-12 12-12c1.2 0 2.3.2 3.4.5v-3.3c-1.1-.2-2.3-.3-3.4-.3-8.6 0-15.5 6.9-15.5 15.5s6.9 15.5 15.5 15.5c7.7 0 14.1-5.6 15.3-12.9l.2-38.2c.1 0 .1 0 .2.1 2.3.6 4.5 1.6 6.4 3.1 0 0 0 0 .1.1 2.3 1.7 4.3 3.9 5.7 6.5h.1z" fill="white" fill-rule="evenodd"></path></svg>
+                        <Logo size={36} />
             <div>
               <h1 style={{ fontSize: 28, fontWeight: 800, margin: 0, letterSpacing: '-0.5px' }}>SIPEKA</h1>
               <p style={{ fontSize: 14, margin: '4px 0 0', opacity: 0.85 }}>Sistem Informasi Pemetaan Kreator Banyumas</p>

@@ -29,8 +29,8 @@ export default function App() {
           <div style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
                         <Logo size={36} />
             <div>
-              <h1 style={{ fontSize: 28, fontWeight: 800, margin: 0, letterSpacing: '-0.5px' }}>SIPEKA</h1>
-              <p style={{ fontSize: 14, margin: '4px 0 0', opacity: 0.85 }}>Sistem Informasi Pemetaan Kreator Banyumas</p>
+              <h1 style={{ fontSize: 28, fontWeight: 800, margin: 0, letterSpacing: '-0.5px' }}>BASKARA</h1>
+              <p style={{ fontSize: 14, margin: '4px 0 0', opacity: 0.85 }}>Banyumas Konten Kreator</p>
             </div>
           </div>
           <div className="header-right" style={{ textAlign: 'right' }}>
@@ -69,7 +69,7 @@ export default function App() {
       </main>
 
       <footer style={{ textAlign: 'center', padding: 24, marginTop: 40, fontSize: 12, color: COLORS.textSecondary }}>
-        SIPEKA · Data diperbarui {new Date().toLocaleDateString('id-ID', { day: 'numeric', month: 'numeric', year: 'numeric' })} · <a href="#root" style={{ color: COLORS.primary, fontWeight: 600, textDecoration: 'none' }}>Kembali ke atas</a>
+              BASKARA · Data diperbarui {new Date().toLocaleDateString('id-ID', { day: 'numeric', month: 'numeric', year: 'numeric' })} · <a href="#root" style={{ color: COLORS.primary, fontWeight: 600, textDecoration: 'none' }}>Kembali ke atas</a>
       </footer>
     </div>
   );

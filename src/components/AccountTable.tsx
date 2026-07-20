@@ -20,7 +20,7 @@ export default function AccountTable({ accounts }: Props) {
   const [filterShop, setFilterShop] = useState<string>('');
   const [filterClass, setFilterClass] = useState('');
   const [page, setPage] = useState(0);
-  const perPage = 25;
+  const [perPage, setPerPage] = useState(25);
 
   const allLocations = [
     "Ajibarang", "Banyumas", "Baturraden", "Cilongok", "Gumelar",
@@ -75,8 +75,8 @@ export default function AccountTable({ accounts }: Props) {
     return list;
   }, [accounts, search, sortKey, sortDir, filterLocation, filterMonetized, filterShop, filterClass]);
 
-  const totalPages = Math.ceil(filtered.length / perPage);
-  const pageData = filtered.slice(page * perPage, (page + 1) * perPage);
+  const totalPages = perPage === 0 ? 1 : Math.ceil(filtered.length / perPage);
+  const pageData = perPage === 0 ? filtered : filtered.slice(page * perPage, (page + 1) * perPage);
 
   const toggleSort = (key: SortKey) => {
     if (sortKey === key) setSortDir(d => d === 'desc' ? 'asc' : 'desc');
@@ -266,37 +266,53 @@ export default function AccountTable({ accounts }: Props) {
         </table>
       </div>
 
-      {totalPages > 1 && (
-        <div className="responsive-pagination">
-          <button
-            disabled={page === 0}
-            onClick={() => setPage(p => p - 1)}
-            style={pageBtnStyle}
+      <div className="responsive-pagination" style={{ justifyContent: 'space-between', display: 'flex' }}>
+        <div className="pagination-left" style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+          <span style={{ fontSize: 12, color: COLORS.textMuted }}>Tampilkan:</span>
+          <select
+            value={perPage}
+            onChange={e => { setPerPage(Number(e.target.value)); setPage(0); }}
+            style={{ ...selectStyle, minWidth: 80 }}
           >
-            ‹ Prev
-          </button>
-          {Array.from({ length: Math.min(totalPages, 15) }, (_, i) => (
-            <button
-              key={i}
-              onClick={() => setPage(i)}
-              style={i === page ? pageBtnActiveStyle : pageBtnStyle}
-            >
-              {i + 1}
-            </button>
-          ))}
-          {totalPages > 15 && <span style={{ color: COLORS.textMuted, fontSize: 12 }}>...</span>}
-          <button
-            disabled={page >= totalPages - 1}
-            onClick={() => setPage(p => p + 1)}
-            style={pageBtnStyle}
-          >
-            Next ›
-          </button>
-          <span style={{ fontSize: 11, color: COLORS.textMuted, marginLeft: 8 }}>
-            Halaman {page + 1} dari {totalPages}
-          </span>
+            <option value={10}>10</option>
+            <option value={25}>25</option>
+            <option value={50}>50</option>
+            <option value={100}>100</option>
+            <option value={0}>Semua</option>
+          </select>
         </div>
-      )}
+        {totalPages > 1 && (
+          <div className="pagination-right" style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
+            <button
+              disabled={page === 0}
+              onClick={() => setPage(p => p - 1)}
+              style={pageBtnStyle}
+            >
+              ‹ Prev
+            </button>
+            {Array.from({ length: Math.min(totalPages, 15) }, (_, i) => (
+              <button
+                key={i}
+                onClick={() => setPage(i)}
+                style={i === page ? pageBtnActiveStyle : pageBtnStyle}
+              >
+                {i + 1}
+              </button>
+            ))}
+            {totalPages > 15 && <span style={{ color: COLORS.textMuted, fontSize: 12 }}>...</span>}
+            <button
+              disabled={page >= totalPages - 1}
+              onClick={() => setPage(p => p + 1)}
+              style={pageBtnStyle}
+            >
+              Next ›
+            </button>
+            <span style={{ fontSize: 11, color: COLORS.textMuted, marginLeft: 8 }}>
+              Halaman {page + 1} dari {totalPages}
+            </span>
+          </div>
+        )}
+      </div>
     </div>
   );
 }

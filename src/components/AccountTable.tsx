@@ -353,7 +353,8 @@ function badge(text: string, color: string, bg: string) {
 }
 
 const searchInputStyle: React.CSSProperties = {
-  flex: '1 1 220px',
+  width: 280,
+  maxWidth: '100%',
   padding: '8px 12px',
   border: `1px solid ${COLORS.border}`,
   borderRadius: 8,

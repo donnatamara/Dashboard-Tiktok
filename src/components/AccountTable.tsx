@@ -266,13 +266,13 @@ export default function AccountTable({ accounts }: Props) {
         </table>
       </div>
 
-      <div className="responsive-pagination" style={{ justifyContent: 'space-between', display: 'flex' }}>
-        <div className="pagination-left" style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+      <div className="responsive-pagination">
+        <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginRight: 16 }}>
           <span style={{ fontSize: 12, color: COLORS.textMuted }}>Tampilkan:</span>
           <select
             value={perPage}
             onChange={e => { setPerPage(Number(e.target.value)); setPage(0); }}
-            style={{ ...selectStyle, minWidth: 80 }}
+            style={{ ...selectStyle, minWidth: 70, width: 'auto' }}
           >
             <option value={10}>10</option>
             <option value={25}>25</option>
@@ -282,7 +282,7 @@ export default function AccountTable({ accounts }: Props) {
           </select>
         </div>
         {totalPages > 1 && (
-          <div className="pagination-right" style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
+          <>
             <button
               disabled={page === 0}
               onClick={() => setPage(p => p - 1)}
@@ -310,7 +310,7 @@ export default function AccountTable({ accounts }: Props) {
             <span style={{ fontSize: 11, color: COLORS.textMuted, marginLeft: 8 }}>
               Halaman {page + 1} dari {totalPages}
             </span>
-          </div>
+          </>
         )}
       </div>
     </div>

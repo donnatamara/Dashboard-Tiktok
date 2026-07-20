@@ -1,3 +1,5 @@
+/* ── Responsive layout utilities ──────────────────── */
+
 .responsive-filters {
   display: flex;
   gap: 10px;
@@ -21,32 +23,39 @@
   padding: 8px 0;
 }
 
-@media (max-width: 768px) {
-  .responsive-filters {
-    flex-direction: column;
-    align-items: stretch;
-    padding: 12px;
+/* ═══════════════════════════════════════════════════
+   TABLET (≤ 1024px) — 4-col summary, smaller headings
+   ═══════════════════════════════════════════════════ */
+@media (max-width: 1024px) {
+  .summary-grid {
+    grid-template-columns: repeat(4, 1fr) !important;
   }
-  .responsive-filters input,
-  .responsive-filters select { width: 100%; }
-  .responsive-pagination button { font-size: 11px; padding: 4px 8px; }
+  .app-header h1 {
+    font-size: 24px !important;
+  }
 }
 
-/* ── Mobile < 700px ──────────────────────────────────── */
-@media (max-width: 700px) {
-  /* Header: stack logo + date vertically */
+/* ═══════════════════════════════════════════════════
+   MOBILE LANDSCAPE (≤ 768px)
+   ═══════════════════════════════════════════════════ */
+@media (max-width: 768px) {
+  /* ── Header: stack logo+title and date ── */
   .app-header > div {
     flex-direction: column !important;
     align-items: flex-start !important;
     gap: 8px !important;
   }
-  .app-header h1 { font-size: 22px !important; }
   .app-header .header-right {
     text-align: left !important;
   }
-  .app-header { padding: 20px 16px !important; }
+  .app-header {
+    padding: 20px 16px !important;
+  }
+  .app-header h1 {
+    font-size: 22px !important;
+  }
 
-  /* Stats row: grid 3 cols, hide dividers */
+  /* ── Stats row: 3 columns, hide dividers ── */
   .stats-row {
     display: grid !important;
     grid-template-columns: repeat(3, 1fr) !important;
@@ -56,26 +65,103 @@
     padding: 16px 12px !important;
     border-radius: 12px !important;
   }
-  .stats-row .stat-item-value { font-size: 22px !important; }
-  .stats-row .stat-divider { display: none !important; }
+  .stats-row .stat-item-value {
+    font-size: 22px !important;
+  }
+  .stats-row .stat-divider {
+    display: none !important;
+  }
 
-  /* Summary cards: 3 cols */
+  /* ── Summary cards: 3 columns ── */
   .summary-grid {
     grid-template-columns: repeat(3, 1fr) !important;
     gap: 10px !important;
   }
-  .summary-grid .summary-card { padding: 14px 12px !important; }
-  .summary-grid .summary-card-value { font-size: 20px !important; }
+  .summary-card {
+    padding: 14px 12px !important;
+  }
+  .summary-card-value {
+    font-size: 20px !important;
+  }
 
-  /* Main content: less padding */
-  .app-main { padding: 0 12px !important; }
+  /* ── Main content: tighter padding ── */
+  .app-main {
+    padding: 0 12px !important;
+  }
+
+  /* ── Filter bar: stack vertically ── */
+  .responsive-filters {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 12px;
+  }
+  .responsive-filters input,
+  .responsive-filters select {
+    width: 100%;
+  }
+
+  /* ── Table: ensure horizontal scroll on mobile ── */
+  .responsive-table-wrap table {
+    min-width: 750px;
+  }
+
+  /* ── Pagination: smaller buttons ── */
+  .responsive-pagination button {
+    font-size: 11px;
+    padding: 4px 8px;
+    min-width: 28px;
+  }
 }
 
-/* ── Mobile < 450px ──────────────────────────────────── */
-@media (max-width: 450px) {
-  .stats-row { grid-template-columns: repeat(2, 1fr) !important; }
-  .summary-grid { grid-template-columns: repeat(2, 1fr) !important; }
-  .stats-row .stat-item-value { font-size: 18px !important; }
-  .summary-grid .summary-card-value { font-size: 17px !important; }
-  .summary-grid .summary-card-sub { font-size: 10px !important; }
+/* ═══════════════════════════════════════════════════
+   MOBILE PORTRAIT (≤ 480px) — 2-col grids
+   ═══════════════════════════════════════════════════ */
+@media (max-width: 480px) {
+  .app-header h1 {
+    font-size: 20px !important;
+  }
+
+  .stats-row {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .stats-row .stat-item-value {
+    font-size: 18px !important;
+  }
+
+  .summary-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 8px !important;
+  }
+  .summary-card {
+    padding: 12px 10px !important;
+  }
+  .summary-card-value {
+    font-size: 17px !important;
+  }
+  .summary-card-sub {
+    font-size: 10px !important;
+  }
+
+  /* Pagination: even smaller for tight screens */
+  .responsive-pagination button {
+    font-size: 10px;
+    padding: 3px 6px;
+    min-width: 26px;
+  }
+}
+
+/* ═══════════════════════════════════════════════════
+   SMALL MOBILE (≤ 380px) — 1-col summary, 2-col stats
+   ═══════════════════════════════════════════════════ */
+@media (max-width: 380px) {
+  .summary-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .app-header h1 {
+    font-size: 18px !important;
+  }
+  .app-header p {
+    font-size: 12px !important;
+  }
 }

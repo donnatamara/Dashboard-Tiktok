@@ -44,13 +44,13 @@ export default function App() {
         {/* Stats row - overlapping the header */}
         <div className="stats-row" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 0, margin: '-20px auto 28px', background: COLORS.white, borderRadius: 16, boxShadow: `${COLORS.shadow} 0px 4px 24px`, padding: '22px 0', maxWidth: 800 }}>
           <StatItem value={totalScraped} label="Total Akun" />
-          <div style={{ width: 1, height: 40, background: COLORS.border }} />
+          <div className="stat-divider" style={{ width: 1, height: 40, background: COLORS.border }} />
           <StatItem value={formatNum(totalFollowers)} label="Total Followers" />
-          <div style={{ width: 1, height: 40, background: COLORS.border }} />
+          <div className="stat-divider" style={{ width: 1, height: 40, background: COLORS.border }} />
           <StatItem value={withLocation} label="Lokasi Terdeteksi" />
-          <div style={{ width: 1, height: 40, background: COLORS.border }} />
+          <div className="stat-divider" style={{ width: 1, height: 40, background: COLORS.border }} />
           <StatItem value={monetized} label="Monetisasi" />
-          <div style={{ width: 1, height: 40, background: COLORS.border }} />
+          <div className="stat-divider" style={{ width: 1, height: 40, background: COLORS.border }} />
           <StatItem value={withShop} label="TikTok Shop" />
         </div>
 

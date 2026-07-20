@@ -30,7 +30,7 @@ export default function App() {
                         <Logo size={36} />
             <div>
               <h1 style={{ fontSize: 28, fontWeight: 800, margin: 0, letterSpacing: '-0.5px' }}>BASKARA</h1>
-              <p style={{ fontSize: 14, margin: '4px 0 0', opacity: 0.85 }}>Banyumas Konten Kreator</p>
+              <p style={{ fontSize: 14, margin: '4px 0 0', opacity: 0.85 }}>Database Banyumas Konten Kreator</p>
             </div>
           </div>
           <div className="header-right" style={{ textAlign: 'right' }}>
